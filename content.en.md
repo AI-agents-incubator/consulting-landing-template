@@ -1,4 +1,4 @@
-# AI Strategy Intensive — Copy (EN)
+# Another one smart — Copy (EN)
 
 The single source of truth for all English copy on the landing page.
 Edit here — I'll sync it into the design.
@@ -310,7 +310,7 @@ Edit here — I'll sync it into the design.
 
 ## 14. Footer
 
-- **tag:** AI Strategy Intensive
+- **tag:** Another one smart
 - **desc:** On-site advisory for executives and owners. From hype — to a roadmap.
 
 - **col 1 title:** Format

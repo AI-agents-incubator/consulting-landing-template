@@ -37,15 +37,12 @@ care of everything else.
 
 Folder structure to upload into `public_html/`:
 
-- `index.html` — the coming-soon placeholder. If you want the full landing at
-  the root of your domain, replace this with the contents of `preview/index.html`
-  instead.
-- `preview/` — the full landing page (kept separate so you can stage work).
+- `index.html` — the full landing page (your site's home page).
 - `landing/` — `data.js` (all copy) and `components.jsx` (all React components).
 
 Example SCP command from your project root:
 
-    scp -r index.html preview/ landing/ user@your-host.com:~/public_html/
+    scp -r index.html landing/ user@your-host.com:~/public_html/
 
 If you prefer the cPanel File Manager, zip the three items locally, upload the
 zip through the web interface, and extract it inside `public_html/`.

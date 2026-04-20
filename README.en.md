@@ -72,8 +72,7 @@ cd consulting-landing-template
 python3 -m http.server 4000
 ```
 
-Open <http://localhost:4000> and you'll see the coming-soon placeholder.
-Open <http://localhost:4000/preview/> and you'll see the full landing with placeholder copy.
+Open <http://localhost:4000> and you'll see the full landing with placeholder copy.
 
 Edit `content.en.md` / `content.ru.md`, sync into `landing/data.js`, refresh the browser,
 see the result. No build step, no watcher, no tooling.
@@ -103,8 +102,8 @@ Review the diff. Keep what you like. Deploy.
 1. **Copy** — edit `content.en.md` and/or `content.ru.md`.
 2. **Data** — sync into `landing/data.js` (both `ru` and `en` branches stay in parity).
 3. **Components** — React is in `landing/components.jsx`. Edit freely.
-4. **Theme** — CSS variables are at the top of `preview/index.html` (colors for light and dark).
-5. **Logo** — the sparkle icon is inline SVG in `index.html` and `preview/index.html`.
+4. **Theme** — CSS variables are at the top of `index.html` (colors for light and dark).
+5. **Logo** — the sparkle icon is inline SVG in `index.html`.
 
 For a deeper walkthrough of what each landing section is doing and why, read
 [METHODOLOGY.en.md](METHODOLOGY.en.md).
@@ -122,9 +121,7 @@ GitHub Pages. See [DEPLOY.en.md](DEPLOY.en.md).
 
 ```
 .
-├── index.html                       # Coming-soon placeholder shown at the root
-├── preview/
-│   └── index.html                   # The actual full landing (promote to root on launch)
+├── index.html                       # Full landing — site home page
 ├── landing/
 │   ├── data.js                      # window.DATA — all copy, bilingual
 │   └── components.jsx               # React components, single file

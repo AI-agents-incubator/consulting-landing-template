@@ -1,177 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="noindex, nofollow" />
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-<title>AI Strategy Intensive — Coming Soon</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Another one smart — Advisory for Executives</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { darkMode: "class" };
+</script>
 <style>
   :root {
-    --bg: #0B0F1A;
-    --bg-alt: #131827;
+    --surface: #FFFFFF;
+    --surface-alt: #F9FAFB;
+    --surface-dark: #111827;
+    --fg: #111827;
+    --fg-secondary: #4B5563;
+    --fg-muted: #6B7280;
+    --fg-subtle: #9CA3AF;
+    --border: #E5E7EB;
+    --border-strong: #D1D5DB;
+  }
+  html.dark {
+    --surface: #0B0F1A;
+    --surface-alt: #131827;
     --fg: #F9FAFB;
     --fg-secondary: #CBD5E1;
     --fg-muted: #94A3B8;
+    --fg-subtle: #64748B;
     --border: #1F2937;
+    --border-strong: #334155;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { height: 100%; }
+  html { scroll-behavior: smooth; }
   body {
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-    background: var(--bg);
+    background: var(--surface);
     color: var(--fg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    display: flex;
-    min-height: 100vh;
-    overflow-x: hidden;
+    transition: background-color 200ms, color 200ms;
   }
-  .page {
-    margin: auto;
-    padding: 3rem 1.5rem;
-    text-align: center;
-    max-width: 640px;
-    position: relative;
-    z-index: 1;
-  }
-  .glow {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 0;
-  }
-  .glow span {
-    position: absolute;
-    border-radius: 9999px;
-    filter: blur(80px);
-    opacity: 0.35;
-  }
-  .glow span:nth-child(1) {
-    width: 500px; height: 500px;
-    background: #9333EA;
-    top: -150px; left: -100px;
-  }
-  .glow span:nth-child(2) {
-    width: 420px; height: 420px;
-    background: #3B82F6;
-    bottom: -120px; right: -80px;
-  }
-  .glow span:nth-child(3) {
-    width: 340px; height: 340px;
-    background: #2DD4BF;
-    top: 40%; left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.18;
-  }
-  .logo {
-    width: 76px; height: 76px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #9333EA 0%, #3B82F6 50%, #2DD4BF 100%);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 12px 36px rgba(147, 51, 234, 0.35);
-    margin-bottom: 2rem;
-  }
-  .logo svg { stroke: white; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-  .badge {
-    display: inline-block;
-    padding: 0.5rem 1.05rem;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--fg-muted);
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
-    border-radius: 9999px;
-    margin-bottom: 1.75rem;
-  }
-  h1 {
-    font-size: clamp(2rem, 5.2vw, 3rem);
-    font-weight: 800;
-    letter-spacing: -0.025em;
-    margin-bottom: 1.25rem;
-    line-height: 1.15;
-  }
-  .gradient {
-    background: linear-gradient(90deg, #A855F7, #3B82F6, #2DD4BF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-  .lead {
-    color: var(--fg-secondary);
-    font-size: 1.1rem;
-    line-height: 1.65;
-    margin-bottom: 0.6rem;
-  }
-  .lead-en {
-    color: var(--fg-muted);
-    font-size: 0.95rem;
-  }
-  .cta {
-    margin-top: 2.5rem;
-  }
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    padding: 0.8rem 1.5rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: white;
-    background: linear-gradient(90deg, #9333EA, #3B82F6);
-    border-radius: 9999px;
-    text-decoration: none;
-    box-shadow: 0 10px 28px rgba(147, 51, 234, 0.28);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 14px 36px rgba(147, 51, 234, 0.4);
-  }
-  .btn svg { stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-  footer {
-    margin-top: 3rem;
-    color: var(--fg-muted);
-    font-size: 0.85rem;
-  }
+  ::selection { background: #D8B4FE; color: #111827; }
+  html.dark ::selection { background: #9333EA; color: white; }
 </style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="landing/data.js"></script>
 </head>
-<body>
-<div class="glow" aria-hidden="true"><span></span><span></span><span></span></div>
-<main class="page">
-  <div class="logo">
-    <svg width="36" height="36" viewBox="0 0 24 24">
-      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-    </svg>
-  </div>
-  <div class="badge">Coming soon</div>
-  <h1>
-    Site under construction.<br>
-    <span class="gradient">Launching soon.</span>
-  </h1>
-  <p class="lead">
-    <strong>AI Strategy Intensive</strong> — on-site advisory for owners and executive teams.
-  </p>
-  <div class="cta">
-    <a href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noopener" class="btn">
-      LinkedIn
-      <svg width="16" height="16" viewBox="0 0 24 24">
-        <line x1="5" y1="12" x2="19" y2="12"/>
-        <polyline points="12 5 19 12 12 19"/>
-      </svg>
-    </a>
-  </div>
-  <footer>© 2026 · [Your Name]</footer>
-</main>
+<body class="bg-[var(--surface)] text-[var(--fg)]">
+<template id="__bundler_thumbnail" data-bg-color="#ffffff">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#9333EA"/>
+        <stop offset="50%" stop-color="#3B82F6"/>
+        <stop offset="100%" stop-color="#2DD4BF"/>
+      </linearGradient>
+    </defs>
+    <rect x="480" y="280" width="240" height="240" rx="48" fill="url(#g)"/>
+    <text x="600" y="640" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="52" fill="#111827">Another one smart</text>
+  </svg>
+</template>
+<div id="root"></div>
+<script type="text/babel" src="landing/components.jsx"></script>
 </body>
 </html>

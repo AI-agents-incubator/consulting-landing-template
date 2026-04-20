@@ -59,7 +59,7 @@ After the interview:
 
 5. Show me a summary:
    - Files changed
-   - What I still need to replace manually (logo SVG in index.html + preview/index.html; any photo assets; Tailwind theme colors if I want to brand-customize)
+   - What I still need to replace manually (logo SVG in index.html; any photo assets; Tailwind theme colors if I want to brand-customize)
    - How to preview locally
    - How to deploy (point me to DEPLOY.en.md)
 

@@ -100,7 +100,6 @@ A solution that **removes the conflict entirely**.
 ```
 public_html/                       (one site root)
 ├── index.html                     ← React landing (static!)
-├── preview/index.html             ← another React page
 ├── landing/
 │   ├── data.js                    ← data for React
 │   └── components.jsx             ← React components (16 of them)

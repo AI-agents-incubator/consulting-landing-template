@@ -416,22 +416,17 @@ If you keep two languages, be aware that it doubles your maintenance burden: eve
    You can do this manually if you're comfortable editing a JS object literal, or let the AI handle the whole interview-and-sync flow using `BOOTSTRAP-PROMPT.en.md`.
    The bootstrap prompt is the recommended path for non-technical users — it interviews you, writes both the markdown and the runtime data, and tells you exactly what's left to do manually.
 
-3. **Replace theme colors and logo in `preview/index.html`.**
-   Open `preview/index.html` and swap the Tailwind theme colors (look for the inline config block in the `<script>` tag) and the inline SVG logo with your own.
+3. **Replace theme colors and logo in `index.html`.**
+   Open `index.html` and swap the Tailwind theme colors (look for the inline config block in the `<script>` tag) and the inline SVG logo with your own.
    The CSS custom properties in the same file (`--surface`, `--fg`, etc.) also control the light/dark theme palette — tweak there for brand colors.
    If you don't have a logo, a typeset wordmark works fine; don't block the launch on logo design.
 
-4. **Replace `index.html` (coming-soon placeholder) with your own or swap preview as root.**
-   The root `index.html` ships as a "coming soon" placeholder so you can deploy before the full landing is ready.
-   When you're ready to launch, either edit `index.html` to be your real landing, or swap `preview/index.html` into the root position and keep the old placeholder as a backup.
-   See `DEPLOY.en.md` for the exact commands.
-
-5. **Preview locally: `python3 -m http.server 4000`.**
-   Run `python3 -m http.server 4000` in the repo root, then open `http://localhost:4000/preview/` for the full landing and `http://localhost:4000/` for the placeholder.
+4. **Preview locally: `python3 -m http.server 4000`.**
+   Run `python3 -m http.server 4000` in the repo root, then open `http://localhost:4000` to see the full landing.
    No build step — edits show up on reload.
    If port 4000 is in use, pick any other free port; the template doesn't care.
 
-6. **Deploy — see `DEPLOY.en.md`.**
+5. **Deploy — see `DEPLOY.en.md`.**
    The template is designed to run on cheap shared hosting alongside a PHP/WordPress backend — no Node, no VPS, no CI pipeline required.
    `DEPLOY.en.md` covers the SCP upload and LiteSpeed cache purge flow.
    If you're on a different host (Netlify, Vercel static, S3+CloudFront), the static files are portable — drop them anywhere that serves HTML/JS/CSS.

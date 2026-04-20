@@ -75,8 +75,7 @@ cd consulting-landing-template
 python3 -m http.server 4000
 ```
 
-Откройте <http://localhost:4000> — увидите coming-soon заглушку.
-Откройте <http://localhost:4000/preview/> — увидите полный лендинг с плейсхолдерами.
+Откройте <http://localhost:4000> — увидите полный лендинг с плейсхолдерами.
 
 Правьте `content.en.md` / `content.ru.md`, синкайте в `landing/data.js`, обновляйте страницу,
 смотрите результат. Никакого билда, watcher'а и тулинга.
@@ -106,8 +105,8 @@ claude
 1. **Копирайт** — правьте `content.en.md` и/или `content.ru.md`.
 2. **Данные** — синкайте в `landing/data.js` (ветки `ru` и `en` держите в паритете).
 3. **Компоненты** — React лежит в `landing/components.jsx`. Правьте как угодно.
-4. **Тема** — CSS-переменные в начале `preview/index.html` (цвета светлой и тёмной темы).
-5. **Логотип** — иконка-искорка сделана инлайновым SVG в `index.html` и `preview/index.html`.
+4. **Тема** — CSS-переменные в начале `index.html` (цвета светлой и тёмной темы).
+5. **Логотип** — иконка-искорка сделана инлайновым SVG в `index.html`.
 
 Подробный разбор того, что делает каждая секция лендинга и зачем, — в
 [METHODOLOGY.md](METHODOLOGY.md).
@@ -125,9 +124,7 @@ GitHub Pages. См. [DEPLOY.md](DEPLOY.md).
 
 ```
 .
-├── index.html                       # Coming-soon заглушка в корне сайта
-├── preview/
-│   └── index.html                   # Полноценный лендинг (промоутится в корень при запуске)
+├── index.html                       # Полный лендинг — главная страница сайта
 ├── landing/
 │   ├── data.js                      # window.DATA — весь копирайт, двуязычный
 │   └── components.jsx               # React-компоненты, один файл

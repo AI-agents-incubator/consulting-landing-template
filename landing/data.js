@@ -1,4 +1,4 @@
-// Bilingual content for AI Strategy Intensive landing page
+// Bilingual content for Another one smart landing page
 window.DATA = {
   ru: {
     nav: [
@@ -280,7 +280,7 @@ window.DATA = {
       small: "Без автоматических воронок. Без менеджеров. Только разговор по делу.",
     },
     footer: {
-      tag: "AI Strategy Intensive",
+      tag: "Another one smart",
       desc: "Выездной advisory-формат для руководителей и собственников. От хайпа — к дорожной карте.",
       cols: [
         { t: "Формат", links: ["Core Intensive", "Strategic Intensive", "Executive Advisory"] },
@@ -495,7 +495,7 @@ window.DATA = {
       small: "No funnels. No sales managers. Just a real conversation.",
     },
     footer: {
-      tag: "AI Strategy Intensive",
+      tag: "Another one smart",
       desc: "On-site advisory for executives and owners. From hype — to a roadmap.",
       cols: [
         { t: "Format", links: ["Core Intensive", "Strategic Intensive", "Executive Advisory"] },

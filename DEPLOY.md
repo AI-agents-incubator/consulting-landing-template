@@ -29,13 +29,12 @@
 
 Структура папок, которую надо залить в `public_html/`:
 
-- `index.html` — placeholder «скоро запуск». Если хочешь сразу полный лендинг в корне домена, замени этот файл содержимым `preview/index.html`.
-- `preview/` — полный лендинг (держим отдельно, чтобы можно было катать work-in-progress).
+- `index.html` — полный лендинг (главная страница сайта).
 - `landing/` — `data.js` (весь копирайт) и `components.jsx` (все React-компоненты).
 
 Пример команды SCP из корня проекта:
 
-    scp -r index.html preview/ landing/ user@your-host.com:~/public_html/
+    scp -r index.html landing/ user@your-host.com:~/public_html/
 
 Если предпочитаешь cPanel File Manager — заархивируй три элемента локально, залей zip через веб-интерфейс и распакуй внутри `public_html/`.
 
