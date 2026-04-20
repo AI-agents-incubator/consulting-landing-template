@@ -2,6 +2,8 @@
 
 # AI Agents Incubator — Consulting Template
 
+> **See it live:** <https://alexkrol.com/preview/> — a real landing built from this template by the methodology's author. Open it on desktop and on mobile, toggle RU/EN, flip the theme — this is what you get after forking and customizing.
+
 A production-ready, zero-build React landing template for consultants, advisors, and boutique firms.
 Ships with a proven **methodology** (how to position an advisory offer) and an AI-driven
 **bootstrap prompt** that customizes the whole landing for you through a short interview.
