@@ -1,247 +1,178 @@
-# Deployment Guide
+**Язык:** Русский · [English](DEPLOY.en.md)
 
-Five ways to ship this template. Pick the one that matches your hosting.
-All options serve the same static files — the landing runs entirely in the browser.
+# Гайд по деплою
 
-## Local preview (before you deploy)
+Пять способов выкатить этот шаблон. Выбирай тот, который подходит под твой хостинг.
+Во всех вариантах отдаются одни и те же статические файлы — лендинг целиком работает в браузере.
 
-Before you upload anything, run the site on your own machine so you know the
-pages render correctly with your edits.
+## Локальный preview (до деплоя)
 
-From the project root:
+Прежде чем что-то заливать, запусти сайт у себя на машине — убедись, что страницы с твоими правками рендерятся корректно.
+
+Из корня проекта:
 
     python3 -m http.server 4000
 
-Then open http://localhost:4000 in your browser. Python 3 is preinstalled on
-macOS and most Linux distributions. On Windows, either run:
+Открой http://localhost:4000 в браузере. Python 3 предустановлен на macOS и в большинстве дистрибутивов Linux. На Windows запускай:
 
     python -m http.server 4000
 
-or install Python 3 from python.org first. If you have Node.js available, this
-one-liner works too:
+или сначала поставь Python 3 с python.org. Если у тебя уже есть Node.js, работает такой однострочник:
 
     npx serve .
 
-Do not try to open `index.html` directly by double-clicking it. The browser
-will load the file under a `file://` URL, and the React and Tailwind scripts
-fetched from unpkg.com won't execute in that context. You need a real HTTP
-origin — even a local one on port 4000 is fine.
+Не пытайся открыть `index.html` двойным кликом. Браузер загрузит файл по `file://` URL, и скрипты React и Tailwind, которые тянутся с unpkg.com, в таком контексте не выполнятся. Нужен реальный HTTP origin — даже локальный на порту 4000 сойдёт.
 
-## Option 1 — Shared hosting (cPanel / Hostinger / SiteGround / GoDaddy / Bluehost)
+## Вариант 1 — Shared hosting (cPanel / Hostinger / SiteGround / GoDaddy / Bluehost)
 
-The cheapest path. Plans typically run about $3/month. You upload the files
-once via SCP, FTP, or the cPanel File Manager, and the hosting provider takes
-care of everything else.
+Самый дешёвый путь. Тарифы обычно в районе $3 в месяц. Ты один раз заливаешь файлы через SCP, FTP или cPanel File Manager — а дальше хостинг всё делает сам.
 
-Folder structure to upload into `public_html/`:
+Структура папок, которую надо залить в `public_html/`:
 
-- `index.html` — the coming-soon placeholder. If you want the full landing at
-  the root of your domain, replace this with the contents of `preview/index.html`
-  instead.
-- `preview/` — the full landing page (kept separate so you can stage work).
-- `landing/` — `data.js` (all copy) and `components.jsx` (all React components).
+- `index.html` — placeholder «скоро запуск». Если хочешь сразу полный лендинг в корне домена, замени этот файл содержимым `preview/index.html`.
+- `preview/` — полный лендинг (держим отдельно, чтобы можно было катать work-in-progress).
+- `landing/` — `data.js` (весь копирайт) и `components.jsx` (все React-компоненты).
 
-Example SCP command from your project root:
+Пример команды SCP из корня проекта:
 
     scp -r index.html preview/ landing/ user@your-host.com:~/public_html/
 
-If you prefer the cPanel File Manager, zip the three items locally, upload the
-zip through the web interface, and extract it inside `public_html/`.
+Если предпочитаешь cPanel File Manager — заархивируй три элемента локально, залей zip через веб-интерфейс и распакуй внутри `public_html/`.
 
-If you already run WordPress on the same domain and want the static landing to
-take priority, add this line to `.htaccess` inside `public_html/`:
+Если на том же домене у тебя уже крутится WordPress, а статический лендинг должен иметь приоритет, добавь эту строку в `.htaccess` внутри `public_html/`:
 
     DirectoryIndex index.html index.php
 
-That tells Apache to serve the static HTML first and fall back to WordPress
-only if no matching HTML file is found. Do not commit `.htaccess` to the
-repository — it's specific to your hosting environment and often contains
-host-generated rewrite rules you don't want to track.
+Это говорит Apache отдавать сначала статический HTML и падать на WordPress только если подходящего HTML-файла нет. Не коммить `.htaccess` в репозиторий — он специфичен для твоего хостинга и часто содержит сгенерированные хостом rewrite-правила, которые в истории не нужны.
 
-Good for: people who already have shared hosting and want to keep monthly
-costs around $3.
+Кому подходит: у тебя уже есть shared hosting и ты хочешь удержать месячные расходы в районе $3.
 
-Bad for: people starting from scratch with no hosting in place. Use Netlify
-(Option 2) instead — you'll be live in under a minute for free.
+Кому не подходит: ты начинаешь с нуля и хостинга ещё нет. Бери Netlify (Вариант 2) — будешь в проде меньше чем за минуту и бесплатно.
 
-## Option 2 — Netlify
+## Вариант 2 — Netlify
 
-The easiest option for a zero-config static site. The free tier includes
-100 GB of monthly bandwidth, which is plenty for most landings.
+Самый простой вариант для статического сайта без конфигурации. Бесплатный тариф включает 100 ГБ трафика в месяц — с запасом для большинства лендингов.
 
-There are three ways to deploy.
+Есть три способа задеплоить.
 
-Path A — drag-and-drop (fastest if you just want a live URL):
+Путь A — drag-and-drop (самый быстрый, если просто нужен живой URL):
 
-1. Open netlify.com/drop.
-2. Drag the project folder from Finder or Explorer onto the page.
-3. Netlify gives you a live URL in about 30 seconds.
-4. Optional: click "Claim this site" to attach it to your Netlify account and
-   hook up a custom domain.
+1. Открой netlify.com/drop.
+2. Перетащи папку проекта из Finder или Explorer на страницу.
+3. Netlify выдаст тебе живой URL секунд за 30.
+4. Опционально: нажми «Claim this site», чтобы привязать сайт к своему аккаунту Netlify и подключить кастомный домен.
 
-Path B — GitHub integration (recommended if you plan ongoing edits):
+Путь B — интеграция с GitHub (рекомендую, если планируешь дальше править):
 
-1. Push your fork to GitHub.
-2. In the Netlify dashboard, click "Add new site" and then "Import an existing
-   project."
-3. Pick your repository and confirm the branch (usually `main`).
-4. Build command: leave EMPTY. There is no build step.
-5. Publish directory: `.` (a single dot — the repo root).
-6. Click deploy. Every subsequent push to `main` triggers an automatic
-   redeploy.
+1. Запушь свой форк на GitHub.
+2. В дашборде Netlify нажми «Add new site», потом «Import an existing project».
+3. Выбери свой репозиторий и подтверди ветку (обычно `main`).
+4. Build command: оставь ПУСТЫМ. Сборки нет.
+5. Publish directory: `.` (одна точка — корень репозитория).
+6. Жми deploy. Каждый следующий push в `main` автоматически триггерит redeploy.
 
-Path C — Netlify CLI (for people who prefer the terminal):
+Путь C — Netlify CLI (для тех, кто любит терминал):
 
     npm install -g netlify-cli
     netlify deploy --prod
 
-The `netlify.toml` file shipped in this repo sets sensible security headers
-(Content-Security-Policy, X-Frame-Options, etc.). You don't need to touch it.
+Файл `netlify.toml`, который лежит в репозитории, выставляет разумные security headers (Content-Security-Policy, X-Frame-Options и т.д.). Трогать его не надо.
 
-Custom domain: in the Netlify dashboard go to Domain settings, then "Add
-custom domain," then follow the DNS instructions it shows. You'll typically
-add a CNAME record at your domain registrar pointing to the Netlify-provided
-hostname.
+Кастомный домен: в дашборде Netlify зайди в Domain settings, нажми «Add custom domain» и следуй инструкциям по ДНС, которые он покажет. Обычно нужно добавить CNAME-запись у своего регистратора, указывающую на выданный Netlify хостнейм.
 
-## Option 3 — Vercel
+## Вариант 3 — Vercel
 
-Very similar to Netlify. Free tier with generous limits and the same
-git-push-to-deploy workflow.
+Очень похоже на Netlify. Бесплатный тариф со щедрыми лимитами и тот же git-push-to-deploy воркфлоу.
 
-Recommended path — GitHub integration:
+Рекомендую путь — интеграцию с GitHub:
 
-1. Push your code to GitHub.
-2. Go to vercel.com, click "New Project," and import your repository.
-3. When Vercel asks for a framework preset, pick "Other."
-4. Leave the build command and output directory at their defaults — there is
-   no build.
-5. Click Deploy.
+1. Запушь код на GitHub.
+2. Зайди на vercel.com, нажми «New Project» и импортируй свой репозиторий.
+3. Когда Vercel спросит про framework preset, выбери «Other».
+4. Build command и output directory оставь по умолчанию — сборки нет.
+5. Жми Deploy.
 
-Vercel auto-detects static sites, so no `vercel.json` config file is required
-for this template.
+Vercel сам распознаёт статические сайты, так что конфиг `vercel.json` для этого шаблона не нужен.
 
-Custom domain: open the project settings, go to Domains, add your domain, and
-follow the DNS instructions. Vercel walks you through the required records.
+Кастомный домен: открой настройки проекта, зайди в Domains, добавь свой домен и следуй ДНС-инструкциям. Vercel проведёт тебя по нужным записям.
 
-## Option 4 — Cloudflare Pages
+## Вариант 4 — Cloudflare Pages
 
-The best fit for high-traffic sites. The free tier includes unlimited
-bandwidth and 500 builds per month, served from Cloudflare's global CDN.
+Лучший выбор для сайтов с высоким трафиком. На бесплатном тарифе — безлимитный трафик и 500 билдов в месяц, раздача через глобальный CDN Cloudflare.
 
-Deployment path:
+Путь деплоя:
 
-1. Push your code to GitHub.
-2. In the Cloudflare dashboard, open Pages, click "Create a project," then
-   "Connect to Git."
-3. Pick your repository.
-4. Build command: leave EMPTY.
-5. Build output directory: `/` (the root).
-6. Click Deploy.
+1. Запушь код на GitHub.
+2. В дашборде Cloudflare открой Pages, нажми «Create a project», потом «Connect to Git».
+3. Выбери свой репозиторий.
+4. Build command: оставь ПУСТЫМ.
+5. Build output directory: `/` (корень).
+6. Жми Deploy.
 
-The first deploy takes about 30 seconds. Subsequent ones are faster because
-Cloudflare caches unchanged files across builds.
+Первый деплой занимает около 30 секунд. Следующие — быстрее, потому что Cloudflare кеширует неизменившиеся файлы между билдами.
 
-Good for: landings that expect serious traffic. Cloudflare's CDN footprint
-beats Netlify and Vercel in several regions, especially outside North America
-and Western Europe.
+Кому подходит: лендингам, которые ждут серьёзного трафика. CDN Cloudflare по нескольким регионам (особенно за пределами Северной Америки и Западной Европы) бьёт Netlify и Vercel.
 
-## Option 5 — GitHub Pages
+## Вариант 5 — GitHub Pages
 
-Free, but with slower deploys than the managed hosts above and a 1 GB limit
-on the repository itself. Fine for a landing page like this one.
+Бесплатно, но деплой медленнее, чем на managed-хостингах выше, плюс лимит 1 ГБ на сам репозиторий. Для лендинга вроде нашего — нормально.
 
-Deployment path:
+Путь деплоя:
 
-1. Push the code to a public GitHub repository.
-2. In the repository, open Settings and then Pages.
-3. Under Source, pick "Deploy from a branch."
-4. Branch: `main`. Folder: `/` (root).
-5. Save. Your URL appears after roughly one minute and looks like
-   `https://<username>.github.io/<repo-name>/`.
+1. Запушь код в публичный репозиторий на GitHub.
+2. В репозитории открой Settings, потом Pages.
+3. В разделе Source выбери «Deploy from a branch».
+4. Branch: `main`. Folder: `/` (корень).
+5. Сохрани. URL появится примерно через минуту и будет выглядеть как `https://<username>.github.io/<repo-name>/`.
 
-Custom domain:
+Кастомный домен:
 
-- Create a `CNAME` file at the repository root whose single line is your
-  domain (for example, `example.com`).
-- At your DNS provider, add a CNAME record pointing your domain to
-  `<username>.github.io`.
-- Once DNS has propagated (usually minutes to an hour), return to the Pages
-  settings and enable "Enforce HTTPS."
+- Создай файл `CNAME` в корне репозитория — единственная строка в нём должна быть твоим доменом (например, `example.com`).
+- У своего DNS-провайдера добавь CNAME-запись, указывающую твой домен на `<username>.github.io`.
+- Когда ДНС распространится (обычно минуты — до часа), вернись в настройки Pages и включи «Enforce HTTPS».
 
-## Which should I pick?
+## Что выбрать?
 
-| Your situation | Pick |
+| Ваша ситуация | Выбирайте |
 |---|---|
-| Already paying for shared hosting | Option 1 |
-| No hosting, want the fastest setup | Option 2 (Netlify drag-and-drop) |
-| Want CI/CD from a GitHub push | Options 2, 3, or 4 |
-| Expecting serious traffic | Option 4 (Cloudflare) |
-| Minimal fuss, public GitHub repo already | Option 5 |
+| Уже платите за shared hosting | Вариант 1 |
+| Хостинга нет, нужна самая быстрая настройка | Вариант 2 (Netlify drag-and-drop) |
+| Нужен CI/CD от push в GitHub | Варианты 2, 3 или 4 |
+| Ожидается серьёзный трафик | Вариант 4 (Cloudflare) |
+| Минимум возни, публичный GitHub-репозиторий уже есть | Вариант 5 |
 
-## Custom domain and HTTPS
+## Кастомный домен и HTTPS
 
-All four modern hosts — Netlify, Vercel, Cloudflare Pages, and GitHub Pages —
-issue and renew Let's Encrypt certificates for you automatically once DNS is
-pointed correctly. You don't install anything; HTTPS just works.
+Все четыре современных хостинга — Netlify, Vercel, Cloudflare Pages и GitHub Pages — автоматически выпускают и обновляют сертификаты Let's Encrypt, как только ДНС правильно настроен. Ничего ставить не надо, HTTPS просто работает.
 
-For shared hosting, you'll typically get Let's Encrypt through the "SSL/TLS"
-section of cPanel, often branded as AutoSSL. Run it once after your domain
-resolves to the host and it renews on its own.
+На shared hosting Let's Encrypt обычно выдаётся через раздел «SSL/TLS» в cPanel, часто под брендом AutoSSL. Запусти его один раз после того, как домен зарезолвится на хост, — дальше он продлевается сам.
 
-DNS basics worth knowing:
+Основы ДНС, которые стоит знать:
 
-- Use a CNAME record for subdomains like `www.example.com` or
-  `app.example.com`.
-- Use an A record (or ALIAS / ANAME, depending on your registrar) for the
-  apex domain `example.com`. Each host publishes the exact values to point to.
+- CNAME-запись — для поддоменов вроде `www.example.com` или `app.example.com`.
+- A-запись (или ALIAS / ANAME, в зависимости от регистратора) — для apex-домена `example.com`. Каждый хостинг публикует точные значения, на которые надо указывать.
 
-## What about SEO and performance?
+## А как же SEO и производительность?
 
-Everything in this template is rendered client-side. That means the browser
-first downloads the HTML shell, then pulls React, ReactDOM, Babel Standalone,
-and Tailwind from a CDN, then executes the JSX. There is a short first-paint
-delay while that boot process runs — usually under a second on a decent
-connection.
+Всё в этом шаблоне рендерится на клиенте. Это значит, что браузер сначала скачивает HTML-оболочку, потом тянет React, ReactDOM, Babel Standalone и Tailwind с CDN, и только потом выполняет JSX. Есть короткая задержка first-paint, пока этот boot проходит — обычно меньше секунды на приличном соединении.
 
-For marketing landings this is perfectly acceptable. Visitors click a link,
-see the page, and scroll. If SEO is mission-critical — for example, an
-e-commerce site banking on organic search rankings across hundreds of
-category pages — consider a static-site generator like Astro, or a Next.js
-static export. Both produce prerendered HTML that ships with content already
-baked in.
+Для маркетинговых лендингов это абсолютно нормально. Посетитель кликает по ссылке, видит страницу, скроллит. Если SEO для тебя критично — например, e-commerce, который держится на органическом поиске по сотням категорийных страниц — смотри в сторону static-site генераторов вроде Astro или static export у Next.js. Оба выдают пререндеренный HTML с контентом, уже запечённым внутри.
 
-See `ARCHITECTURE.md` for the full discussion of the trade-offs behind this
-zero-build approach, including when to migrate and what to migrate to.
+Подробный разбор trade-off'ов zero-build подхода, включая момент, когда стоит мигрировать и куда — смотри в `ARCHITECTURE.md`.
 
-## Troubleshooting
+## Траблшутинг
 
-Common issues you may hit and how to resolve them:
+Частые проблемы и как их решать:
 
-- "My changes don't show up after deploying." This is almost always the
-  browser cache. Hard-reload with Cmd+Shift+R on macOS or Ctrl+Shift+R on
-  Windows and Linux. If you're on shared hosting behind LiteSpeed, also purge
-  the server cache — `wp litespeed-purge all` via WP-CLI, or via the LiteSpeed
-  plugin admin UI.
-- "CDN scripts fail to load." Some corporate networks block unpkg.com or
-  cdnjs. The fix is to serve React, ReactDOM, Babel, and Tailwind from your
-  own host instead: pin the exact versions, download them once, drop the
-  files under a `vendor/` directory, and update the `<script src>` attributes
-  in your HTML to point there.
-- "JSX parsing errors." Babel Standalone prints these to the browser console
-  — open DevTools and read the message. The cause is nearly always a syntax
-  typo inside `components.jsx`, such as an unclosed tag or a missing comma.
-  Fix the file and reload.
-- "Tailwind classes don't apply." Make sure the Tailwind CDN `<script>` tag
-  is present in your HTML and loads before `components.jsx`. If you swapped
-  CDNs or versions, test in an incognito window to rule out cached 404s.
-- "`.htaccess` not working on shared host." Two requirements: Apache must
-  have `mod_rewrite` enabled (most cPanel hosts do by default), and
-  `AllowOverride` must be permitted for your directory in the server config.
-  If neither you nor support can toggle those, contact your provider.
+- «Мои изменения не появляются после деплоя.» Почти всегда это кэш браузера. Делай hard-reload: Cmd+Shift+R на macOS или Ctrl+Shift+R на Windows и Linux. Если ты на shared hosting под LiteSpeed — ещё и продуй серверный кэш: `wp litespeed-purge all` через WP-CLI или через админку плагина LiteSpeed.
+- «CDN-скрипты не грузятся.» В некоторых корпоративных сетях заблокирован unpkg.com или cdnjs. Решение — раздавать React, ReactDOM, Babel и Tailwind со своего хоста: зафиксируй точные версии, скачай их один раз, положи файлы в папку `vendor/` и поменяй атрибуты `<script src>` в HTML, чтобы они указывали туда.
+- «Ошибки парсинга JSX.» Babel Standalone пишет их в консоль браузера — открой DevTools и прочитай сообщение. Причина почти всегда — опечатка синтаксиса внутри `components.jsx`: незакрытый тег, пропущенная запятая. Почини файл и перезагрузи.
+- «Классы Tailwind не применяются.» Проверь, что `<script>`-тег Tailwind CDN есть в твоём HTML и грузится до `components.jsx`. Если ты менял CDN или версии — проверь в инкогнито, чтобы исключить закэшированные 404.
+- «`.htaccess` не работает на shared host.» Два требования: в Apache должен быть включён `mod_rewrite` (на большинстве cPanel-хостов — по умолчанию да), и `AllowOverride` должен быть разрешён для твоего каталога в конфиге сервера. Если ни ты, ни поддержка не могут это переключить — пиши провайдеру.
 
-## Next steps
+## Дальнейшие шаги
 
-- Customize content following the instructions in `BOOTSTRAP-PROMPT.md`.
-- Read `METHODOLOGY.md` to understand the positioning logic behind the copy.
-- Deploy using whichever option above fits your situation.
-- Ship.
+- Настрой контент по инструкции из `BOOTSTRAP-PROMPT.md`.
+- Прочитай `METHODOLOGY.md` — поймёшь логику позиционирования за копирайтом.
+- Задеплой тем вариантом выше, который подходит под твою ситуацию.
+- Выкатывай.

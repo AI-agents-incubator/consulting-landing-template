@@ -1,85 +1,87 @@
-# Bootstrap Prompt — Let AI Customize This Template for You
+**Язык:** Русский · [English](BOOTSTRAP-PROMPT.en.md)
 
-## How to use this
+# Bootstrap-промпт — пусть ИИ настроит этот шаблон под тебя
 
-1. Fork or clone this repository to your machine.
-2. Install the Claude Code CLI — instructions at https://docs.claude.com/claude-code.
-3. Open a terminal in the cloned folder and run `claude` there.
-4. Copy the prompt block below (everything inside the fenced ` ```markdown ` block) and paste it into the Claude Code session.
+## Как это использовать
 
-That's it. The AI takes it from there.
+1. Форкни или клонируй репозиторий себе на машину.
+2. Поставь Claude Code CLI — инструкция здесь: https://docs.claude.com/claude-code.
+3. Открой терминал в папке с клоном и запусти `claude`.
+4. Скопируй блок промпта ниже (всё, что внутри fenced-блока ` ```markdown `) и вставь в сессию Claude Code.
 
-## What will happen
+Всё. Дальше ИИ работает сам.
 
-- Claude will ask you about 10 short questions about you and your offer, one at a time.
-- Claude will rewrite `content.en.md` and `content.ru.md` with your answers, keeping the section structure intact.
-- Claude will sync the copy into `landing/data.js` so the live site reflects your answers.
-- Claude will tell you what to still replace manually — logo SVG, photos, brand colors.
-- Claude will NOT deploy. Deploying is a separate step you run yourself after reviewing changes.
-- You stay in control. Review every change before you commit, and ask Claude to redo anything you don't like.
+## Что произойдёт
 
-## The prompt
+- Claude задаст тебе 10 коротких вопросов про тебя и твою услугу — по одному за раз.
+- Claude перепишет `content.en.md` и `content.ru.md` с твоими ответами, сохранив структуру секций.
+- Claude синхронизирует копирайт в `landing/data.js`, чтобы живой сайт отражал твои ответы.
+- Claude подскажет, что ещё надо заменить руками — SVG-логотип, фотографии, цвета бренда.
+- Claude НЕ будет деплоить. Деплой — это отдельный шаг, который ты делаешь сам после просмотра изменений.
+- Контроль остаётся у тебя. Проверяй каждое изменение перед коммитом и проси Claude переделать всё, что не нравится.
 
-Copy everything in the block below and paste it into your Claude Code session:
+## Сам промпт
+
+Скопируй всё, что внутри блока ниже, и вставь в свою сессию Claude Code:
 
 ```markdown
-You are helping me customize the AI Agents Incubator Consulting Template for my own consulting practice.
+Ты помогаешь мне настроить шаблон AI Agents Incubator Consulting Template под мою консалтинговую практику.
 
-Read these files first, in order:
+Сначала прочитай эти файлы, в указанном порядке:
 1. README.md
 2. METHODOLOGY.md
 3. content.en.md
 4. content.ru.md
-5. landing/data.js (structure only, don't edit yet)
+5. landing/data.js (только структуру, пока не редактируй)
 
-Then interview me by asking these questions, ONE AT A TIME, waiting for my answer before the next:
+Дальше проведи со мной интервью. Задавай вопросы ПО ОДНОМУ, дожидаясь моего ответа перед следующим. Всё интервью веди на русском языке.
 
-1. Your name (how it should appear in "About the author")
-2. Your LinkedIn URL
-3. Your personal website URL (or skip)
-4. Email or contact form URL
-5. One-sentence positioning: what do you help whom achieve?
-6. Top 3 industries you serve (or "generalist")
-7. Your 3–4 strongest credentials (founder, author, years of experience, notable clients — whatever is true)
-8. Your target client (owners, C-level, department heads, communities — pick one primary)
-9. Your three pricing tiers — name, price range, and what's included. If you don't have three, propose them based on industry norms.
-10. Which languages the landing should support (EN only, RU only, EN+RU, or add another)
+1. Твоё имя (как оно должно появиться в разделе «Об авторе»)
+2. URL твоего LinkedIn
+3. URL твоего персонального сайта (или «пропустить»)
+4. Email или URL формы обратной связи
+5. Позиционирование одним предложением: кому ты помогаешь и чего достичь?
+6. Топ-3 индустрии, с которыми ты работаешь (или «дженералист»)
+7. Твои 3–4 самых сильных регалии (фаундер, автор, годы опыта, известные клиенты — что угодно, что правда)
+8. Твой целевой клиент (собственники, C-level, руководители отделов, сообщества — выбери одного основного)
+9. Три ценовых тира — название, вилка цены и что входит. Если у тебя нет трёх, предложи их сам, опираясь на индустриальную норму.
+10. Какие языки должен поддерживать лендинг (только EN, только RU, EN+RU или добавить ещё)
 
-After the interview:
+После интервью:
 
-1. Rewrite content.en.md — replace every [Your Name], [X]+, [Your credential N], industry list, and pricing with my answers. Keep section structure and headings identical. If I chose EN only, delete content.ru.md and the `ru` key in landing/data.js.
+1. Перепиши content.ru.md — замени каждое [Your Name], [X]+, [Your credential N], список индустрий и прайсинг на мои ответы. Сохрани структуру секций и заголовков один-в-один. Пиши на естественном русском языке — не делай подстрочник, если я формулировал на английском.
 
-2. Rewrite content.ru.md analogously if I chose to keep Russian. Translate my answers to natural Russian — don't word-for-word it.
+2. Перепиши content.en.md аналогично, если я выбрал оставить английский. Переведи мои ответы на естественный английский — не слово-в-слово. Если я выбрал «только RU», удали content.en.md и ключ `en` в landing/data.js.
 
-3. Sync content into landing/data.js — update both `ru` and `en` branches (or just one, per my choice). Keep the JSON structure and keys identical; change only string values.
+3. Синхронизируй контент в landing/data.js — обнови обе ветки `ru` и `en` (или только одну, в зависимости от моего выбора). Сохрани JSON-структуру и ключи без изменений; меняй только значения строк.
 
-4. Update index.html — replace [Your Name] in the footer and the LinkedIn URL in the CTA button with my real values.
+4. Обнови index.html — замени [Your Name] в футере и URL LinkedIn в CTA-кнопке на мои реальные значения.
 
-5. Show me a summary:
-   - Files changed
-   - What I still need to replace manually (logo SVG in index.html + preview/index.html; any photo assets; Tailwind theme colors if I want to brand-customize)
-   - How to preview locally
-   - How to deploy (point me to DEPLOY.md)
+5. Покажи мне сводку:
+   - Какие файлы изменены
+   - Что ещё нужно заменить руками (SVG-логотип в index.html + preview/index.html; любые фото-ассеты; цвета темы Tailwind, если я хочу кастомизировать бренд)
+   - Как сделать локальный preview
+   - Как задеплоить (отправь меня в DEPLOY.md)
 
-6. Do NOT commit anything. Do NOT deploy. I will review and commit myself.
+6. НЕ коммить ничего. НЕ деплой. Я проверю и закоммичу сам.
 
-Constraints:
-- Do not invent statistics or client names I didn't give you
-- Do not add industries I didn't mention
-- Keep FAQ wording — it's methodology, not personal
-- Keep "What this isn't" and "Not a fit" wording — same reason
-- If I say "skip" for a question, leave the original placeholder in place
+Ограничения:
+- Не выдумывай статистику и имена клиентов, которых я не называл
+- Не добавляй индустрии, которые я не упоминал
+- Не меняй формулировки FAQ — это методология, а не персональное
+- Не меняй формулировки «Что этим не является» и «Кому это не подойдёт» — по той же причине
+- Если я говорю «пропустить» на какой-то вопрос — оставь оригинальный placeholder на месте
 
-Start with question 1.
+Начинай с вопроса 1.
 ```
 
-## Troubleshooting and tips
+## Если что-то пошло не так
 
-- **If Claude asks to install Node, npm, a bundler, or any build toolchain** — stop it. This template has no build step on purpose. Everything runs in the browser via Babel Standalone. If the AI tries to "modernize" the stack, tell it "no, keep the zero-build architecture."
-- **If Claude suggests rewriting the whole landing from scratch** — stop it. The 14-section structure is the product. The AI's job is to fill in placeholders, not redesign.
-- **If Claude wants to deploy for you** — defer. Review the changes first, commit when you're satisfied, then handle deploy yourself following `DEPLOY.md`.
-- **If the AI goes off-track** — re-paste the prompt. It's designed to be the single source of truth for this task; pasting it again resets the agent's scope.
-- **You can re-run the prompt with different answers.** If you want to A/B your positioning — e.g. "what if I targeted C-level instead of owners?" — just run the prompt again from a clean git state and compare outputs.
-- **Review every change before committing.** The AI is good at this task, but it will sometimes interpret a question liberally or paraphrase something you said more strongly than you meant. Read the diff.
+- **Если Claude просит поставить Node, npm, бандлер или любой build-тулчейн** — останови его. У этого шаблона намеренно нет build step. Всё работает в браузере через Babel Standalone. Если ИИ пытается «модернизировать» стек — скажи ему: «нет, сохраняй zero-build архитектуру».
+- **Если Claude предлагает переписать весь лендинг с нуля** — останови его. Структура из 14 секций — это и есть продукт. Задача ИИ — заполнить placeholder'ы, а не редизайнить.
+- **Если Claude хочет задеплоить за тебя** — отложи. Сначала проверь изменения, закоммить когда всё ОК, а деплой делай сам по `DEPLOY.md`.
+- **Если ИИ съехал с темы** — вставь промпт ещё раз. Он задуман как единственный источник правды для этой задачи; повторная вставка перезагружает scope агента.
+- **Можно перезапускать промпт с другими ответами.** Если хочешь A/B-тест позиционирования — например, «а что если нацелиться на C-level вместо собственников?» — просто запусти промпт заново из чистого git-состояния и сравни результаты.
+- **Проверяй каждое изменение перед коммитом.** ИИ хорошо справляется с этой задачей, но иногда трактует вопрос вольно или перефразирует сказанное сильнее, чем ты имел в виду. Читай diff.
 
-Once customized, continue with `DEPLOY.md` to ship your landing.
+Когда настройка закончена — переходи к `DEPLOY.md`, чтобы выкатить лендинг.

@@ -1,445 +1,447 @@
-# Consulting Landing Methodology
+# Методология консалтингового лендинга
 
-## Introduction
+**Язык:** Русский · [English](METHODOLOGY.en.md)
 
-This is a methodology for turning a consulting or advisory offer into a one-page landing that works as a **positioning artifact**, not a marketing brochure.
-The landing is where your offer stops being "I help with things" and becomes a specific, priced, scoped product that someone can say yes or no to.
-If you have delivery experience but your pitch keeps mutating every conversation, the real fix isn't more marketing — it's forcing yourself to write down, in public, exactly who you serve, what you do, what you don't do, and what it costs.
+## Введение
 
-The 14-section structure in this template isn't arbitrary.
-Each section performs a specific job in the buyer's decision process — signaling authority, filtering bad-fit leads, answering objections before they become blockers, and giving the buyer permission to self-qualify before they ever talk to you.
-You can reorder or rename sections, but if you remove the jobs they do, your landing stops selling and starts describing.
-This document explains what each section is doing under the hood so you can customize with intent, not just taste.
+Это методология, которая превращает консалтинговый или advisory-оффер в одностраничный лендинг — не маркетинговую брошюру, а **артефакт позиционирования**.
+Лендинг — это место, где ваш оффер перестаёт быть «я помогаю с разными штуками» и становится конкретным продуктом: со скоупом, ценой и границами, на который можно ответить «да» или «нет».
+Если у вас уже есть опыт реальной работы, но питч мутирует от разговора к разговору, проблема не в маркетинге. Проблема в том, что вы не заставили себя публично зафиксировать: кого обслуживаете, что делаете, что не делаете и сколько это стоит.
 
-A landing written this way has a second benefit you don't expect: it clarifies your own thinking.
-When you force yourself to write "who this isn't for" or "what this isn't," you find out where your offer is fuzzy.
-Most consultants who ship this template end up rewriting their own verbal pitch a week later, because the landing exposed the soft spots.
-Treat that as a feature, not an inconvenience.
+Структура из 14 секций в этом шаблоне — не случайная.
+Каждая секция выполняет конкретную работу в процессе принятия решения покупателем: сигналит об экспертизе, отсеивает неподходящих лидов, снимает возражения до того, как они превратились в блокер, и даёт покупателю возможность сам себя квалифицировать — ещё до первого контакта с вами.
+Секции можно переставлять и переименовывать, но если убрать работу, которую они выполняют, лендинг перестанет продавать и начнёт описывать.
+Этот документ объясняет, что каждая секция делает под капотом, — чтобы вы кастомизировали осознанно, а не по вкусу.
 
-## Who this is for
+У лендинга, написанного так, есть неожиданный побочный эффект: он проясняет ваше собственное мышление.
+Когда приходится сформулировать «для кого это не подходит» и «чем это не является», вы обнаруживаете, где ваш оффер размыт.
+Большинство консультантов, которые доводят этот шаблон до запуска, через неделю переписывают и свой устный питч — потому что лендинг подсветил слабые места.
+Это фича, не баг.
 
-- Independent consultants and advisors (solo practitioners) who already deliver paid work
-- Boutique consulting firms (2–10 people) who want a clean positioning page for a named offer
-- Experts moving from an employed specialist role into an advisory practice
-- People with real delivery experience but no productized offer yet — you've done the work, you just haven't packaged it
-- Anyone who already charges premium rates and needs a landing that signals "premium" without looking like a SaaS homepage
-- Advisors building their first standalone site after leaving a firm or agency
+## Для кого это
 
-**Explicitly not for:**
+- Независимые консультанты и advisor'ы (соло-практики), у которых уже есть платные клиенты
+- Бутиковые консалтинговые команды (2–10 человек), которым нужна чистая страница под именованный оффер
+- Эксперты, которые переходят из наёмной специализированной роли в advisory-практику
+- Люди с реальным опытом доставки, но без упакованного оффера — вы делали работу, просто ещё не собрали из неё продукт
+- Все, кто уже берёт премиум-ценник и хочет лендинг, который сигналит «премиум», не выглядя при этом как SaaS-главная
+- Advisor'ы, которые строят свой первый самостоятельный сайт после ухода из фирмы или агентства
 
-- SaaS founders — you need a product landing, not a service landing
-- Agencies selling implementation hours — your buying psychology is different (scoped projects, RFPs, hourly rates)
-- People with no delivery experience yet — build the track record first, then come back
-- Info-product sellers — this template will undercut the funnel moves you need (scarcity, urgency, upsell ladders)
-- Anyone selling to a consumer audience — B2C landings follow different rules entirely
+**Явно не для:**
 
-## The problem this template solves
+- SaaS-основателей — вам нужен продуктовый лендинг, а не сервисный
+- Агентств, которые продают implementation-часы — у вас другая психология покупки (скоуп-проекты, RFP, почасовая ставка)
+- Людей без опыта доставки — сначала набейте портфолио, потом возвращайтесь
+- Инфобиза — этот шаблон подрежет все воронковые приёмы, на которых вы держитесь (scarcity, urgency, цепочки апселлов)
+- Тех, кто продаёт конечному потребителю (B2C) — там работают совсем другие правила
 
-Most consulting landings fall into one of three failure modes.
+## Какую проблему решает этот шаблон
 
-The first is **corporate mush**: sleek stock photos, phrases like "transforming your business through strategic partnership," no specific buyer, no specific outcome, no price.
-The reader leaves thinking "they seem professional" and contacts nobody.
+Большинство консалтинговых лендингов заваливается в один из трёх режимов.
 
-The second is the **price-hidden black box**: polished visuals but every pricing question routes through "book a discovery call."
-This signals that either the price is embarrassingly low (so they want to sell you before you see it) or wildly negotiable (so you'd better be ready to haggle).
-Serious buyers who already know they have budget just close the tab.
+Первый — **корпоративная каша**: глянцевые стоковые фото, фразы вроде «трансформация вашего бизнеса через стратегическое партнёрство», никакого конкретного покупателя, никакого конкретного результата, никакой цены.
+Читатель уходит с мыслью «выглядят солидно» и не пишет никому.
 
-The third mode is the **info-product funnel**: countdown timers, "limited spots," testimonials with only first names, a free PDF in exchange for your email.
-This converts if you're selling a $97 course to cold traffic.
-It actively repels the buyer you actually want — an owner or executive with a real budget who needs someone who clearly isn't desperate.
-The moment a serious buyer sees a lead magnet popup on a consulting page, they assume you don't have enough inbound to say no, and they move on.
+Второй — **прайс-блэкбокс**: визуал вылизан, но на любой вопрос про цену — «запишитесь на discovery call».
+Это сигнал: либо цена стыдно низкая (и её прячут, пока не успеют «продать»), либо жёстко торгуемая (и готовьтесь торговаться).
+Серьёзный покупатель, у которого уже есть бюджет, просто закрывает вкладку.
 
-This template models a fourth option: a **clear, honest, premium-priced advisory offer** that tells the reader who it's for, what they'll walk away with, who runs it, what it costs in ranges, and — crucially — who it's *not* for.
-The entire structure is optimized around one question: can a qualified buyer decide, in five minutes, whether to reach out?
-If yes, the landing is working.
-If they need to "book a call to learn more," it isn't.
-Every section in the breakdown below is there because it removes a specific blocker between "interested" and "sent the form."
+Третий — **инфобизовая воронка**: таймеры обратного отсчёта, «осталось 3 места», отзывы только с именами без фамилий, бесплатный PDF в обмен на email.
+Это конвертит, если вы продаёте курс за $97 холодному трафику.
+Но это активно отталкивает того покупателя, который вам нужен на самом деле — владельца или топ-менеджера с реальным бюджетом, которому нужен человек, у которого очевидно нет отчаяния.
+В момент, когда серьёзный покупатель видит всплывающий лид-магнит на консалтинговой странице, он делает вывод: у этого человека мало входящих, иначе он бы не клянчил email. И уходит.
 
-## Landing section breakdown
+Этот шаблон моделирует четвёртый вариант: **ясный, честный, премиальный advisory-оффер**, который говорит читателю, для кого он сделан, что человек получит на выходе, кто его ведёт, сколько это стоит в диапазонах — и, что критично, для кого он *не* подходит.
+Вся структура оптимизирована под один вопрос: может ли квалифицированный покупатель за пять минут решить, писать вам или нет?
+Если да — лендинг работает.
+Если ему нужно «записаться на звонок, чтобы узнать больше» — не работает.
+Каждая секция в разборе ниже стоит там, где стоит, потому что снимает конкретный блокер между «интересно» и «отправил форму».
 
-Each section below covers three things: **Purpose** (the job this section does in the buyer's decision process), **What to fill in** (what content goes here), and **Common mistakes** (what to avoid).
-Read sections out of order if you want — each is self-contained.
+## Разбор секций лендинга
 
-### 1. Navigation
+Каждая секция ниже описана в трёх пунктах: **Назначение** (что секция делает в решении покупателя), **Что заполнить** (какой контент туда кладётся), **Типичные ошибки** (что не делать).
+Читайте в любом порядке — секции самодостаточные.
 
-**Purpose.**
-The nav bar does two jobs.
-First, it's a table of contents — skimmers scan it to see if your offer covers what they care about.
-Second, the `navCta` button is the first moment you ask for action, so it sets tone.
-A nav that reads "About · Services · Contact" is generic; one that reads "Problem · Outcomes · Format · Pricing · FAQ · Get in touch" tells the reader "this page is structured around your decision."
+### 1. Navigation — верхнее меню
 
-**What to fill in.**
-Keep it to 5–7 items max.
-The six sections in the template (Problem, Outcomes, Format, About, Pricing, FAQ) are the ones most buyers actually want to jump to.
-`navCta` should be action-oriented — "Get in touch," "Apply," "Request a session" — not "Contact."
+**Назначение.**
+Навигация делает две вещи.
+Во-первых, это оглавление — кто скиммит страницу, сканирует навбар и проверяет, есть ли там то, что его интересует.
+Во-вторых, кнопка `navCta` — это первый раз, когда вы просите действия, и она задаёт тон.
+Навбар «About · Services · Contact» — дженерик.
+Навбар «Problem · Outcomes · Format · Pricing · FAQ · Get in touch» говорит читателю: «страница построена вокруг твоего решения».
 
-**Common mistakes.**
-Don't stuff the nav with every section.
-Don't use vague labels ("Our approach," "Philosophy").
-Don't forget mobile — long nav labels wrap ugly on phones.
-Don't link to external social accounts from the nav — it sends engaged readers off the page before they reach the pricing section.
+**Что заполнить.**
+Не больше 5–7 пунктов.
+Шесть секций из шаблона (Problem, Outcomes, Format, About, Pricing, FAQ) — это то, к чему покупатели реально хотят прыгнуть.
+`navCta` должна быть в action-формулировке — «Get in touch», «Apply», «Request a session» — не «Contact».
 
-### 2. Hero (badge, headline, lead, meta)
+**Типичные ошибки.**
+Не пихайте в навбар все секции.
+Не используйте размытые ярлыки («Our approach», «Philosophy»).
+Не забывайте про мобайл — длинные пункты криво переносятся на телефоне.
+Не ставьте в навбар ссылки на соцсети — вовлечённый читатель уйдёт со страницы ещё до секции с ценами.
 
-**Purpose.**
-The hero is the positioning statement.
-In ~3 seconds it must communicate: what this is (format), who it's for (implied audience), and what's different (the tension in the headline).
-The meta strip underneath (hours, duration, delivery mode) answers the buyer's immediate operational question — "how much of my time does this take?"
+### 2. Hero (бейдж, заголовок, лид, мета)
 
-**What to fill in.**
-The badge is a one-line format label (e.g. "On-site advisory intensive," "Executive coaching sprint," "Board-level strategy retainer").
-The headline works best as a tension pair: a generic statement everyone agrees with, followed by a sharper statement that reframes it.
-The lead is one sentence that makes the promise explicit.
-Primary CTA = ask, secondary CTA = "learn more."
-Three meta pills = concrete facts, not benefits.
+**Назначение.**
+Hero — это позиционирующее высказывание.
+За ~3 секунды он должен сообщить: что это (формат), для кого это (аудитория — явно или по смыслу), чем это отличается (напряжение внутри заголовка).
+Мета-полоса под заголовком (часы, длительность, способ проведения) отвечает на главный операционный вопрос покупателя: «сколько моего времени это займёт?»
 
-**Example of the tension pair.**
-Weak: "AI strategy for modern business."
-Better: "Everyone talks about AI. Nobody tells you where to start."
-The weak version tells you the topic.
-The better version tells you the topic AND the frustration the buyer is already feeling AND the implied promise that you will tell them where to start.
+**Что заполнить.**
+Бейдж — это однострочный ярлык формата («On-site advisory intensive», «Executive coaching sprint», «Board-level strategy retainer»).
+Заголовок лучше всего работает как пара с напряжением: сначала общая фраза, с которой все согласны, потом резкая фраза, которая переворачивает смысл.
+Лид — одно предложение, в котором обещание сформулировано открытым текстом.
+Основной CTA = просьба, вторичный CTA = «узнать больше».
+Три меты — это конкретные факты, не бенефиты.
 
-**Common mistakes.**
-Headlines that try to be clever instead of clear — "Unleash your AI potential" says nothing.
-Leads that list three benefits in a comma-separated run-on.
-CTAs that say "Submit" or "Click here."
-Meta pills that repeat things already in the lead ("you'll learn a lot" — that's not a meta fact).
-Putting a photo of yourself in the hero — it pushes the headline down and delays comprehension; photos belong in the About section.
+**Пример пары с напряжением.**
+Слабо: «AI-стратегия для современного бизнеса».
+Лучше: «Все говорят про AI. Никто не говорит, с чего начать».
+Слабая версия просто называет тему.
+Лучшая — называет тему, называет фрустрацию, которую покупатель и так уже чувствует, и намекает на обещание: мы скажем тебе, с чего начать.
 
-### 3. Who it's for
+**Типичные ошибки.**
+Заголовки, которые пытаются быть остроумными вместо ясных, — «Раскройте ваш AI-потенциал» не говорит ни о чём.
+Лиды, в которых три бенефита слиты через запятые в одно длинное предложение.
+CTA в духе «Отправить» или «Нажмите здесь».
+Мета-пилюли, которые повторяют то, что уже есть в лиде («вы узнаете много нового» — это не факт, это пустота).
+Фото автора в hero — оно сдвигает заголовок вниз и тормозит восприятие; фото уместно в About.
 
-**Purpose.**
-Named segmentation.
-The buyer needs to see themselves on the page within 10 seconds of landing, or they leave.
-Four named groups (owners, C-suite, department heads, communities) lets each reader point at one and say "that's me."
-This also filters out non-buyers — if none of the four groups describe you, you're not the audience, and the landing does its job by quietly telling you so.
+### 3. Who it's for — для кого
 
-**What to fill in.**
-3–5 named buyer segments with one-sentence descriptions of what each group specifically wants.
-Use their real titles (CEO, COO, founder), not flattering abstractions ("visionary leaders").
-The description should name the concrete thing that segment cares about — an owner cares about where capital moves the needle, a COO cares about operational integration, a head of department cares about use cases in their function.
-Writing one generic description across all four groups defeats the point.
+**Назначение.**
+Именованная сегментация.
+Читатель должен увидеть себя на странице в течение 10 секунд, иначе он уйдёт.
+Четыре названные группы (владельцы, C-уровень, руководители подразделений, сообщества) позволяют каждому ткнуть пальцем в одну и сказать «это я».
+Заодно это отсеивает не-покупателей — если ни одна из групп про вас, значит, вы не целевая аудитория, и лендинг честно вам об этом намекнул.
 
-**Common mistakes.**
-Listing one generic audience ("business leaders").
-Listing 10 segments — if everyone is the audience, nobody is.
-Describing each segment with the same generic benefit.
-Using insider language that only the buyer's peers understand — if your copy says "Series B+ founders scaling GTM motion," you've narrowed to a tribe that may or may not be yours.
-Know who you're talking to.
+**Что заполнить.**
+3–5 именованных сегментов с одним предложением, которое описывает, чего эта группа конкретно хочет.
+Используйте реальные должности (CEO, COO, основатель), а не комплиментарные абстракции («визионерские лидеры»).
+В описании должно быть названо конкретное — владельца волнует, куда капитал двигает стрелку; COO волнует операционная интеграция; руководителя отдела — use cases внутри его функции.
+Одно дженерик-описание на все четыре группы убивает смысл сегментации.
 
-### 4. Problem
+**Типичные ошибки.**
+Перечислять одну общую аудиторию («бизнес-лидеры»).
+Перечислять 10 сегментов — если аудитория все, значит, никто.
+Описывать все сегменты одним и тем же общим бенефитом.
+Использовать инсайдерский язык, который понимает только узкий круг: если у вас написано «основатели Series B+, которые скейлят GTM motion», вы сузились до племени, которое может быть вашим, а может и нет.
+Знайте, с кем вы говорите.
 
-**Purpose.**
-Problem agitation, but honest.
-The buyer is already aware they have a problem or they wouldn't be reading; this section's job is to show you understand the *specific texture* of their problem better than they could articulate it.
-Statistics + a short quote do this efficiently.
-The quote especially — putting the buyer's own inner monologue on the page — is the most trust-building element on many landings.
+### 4. Problem — проблема
 
-**What to fill in.**
-3–5 data points (stats, numbers, ratios) that describe the reader's current situation, plus one quote that captures the sentiment.
-Stats should be specific enough to feel real.
-If you don't have survey data, rewrite this as concrete observations from your own practice ("I've heard this sentence from 40+ executives in the past year..." or "The #1 thing I hear in first calls is...").
-Observations from your own work are more credible than generic industry surveys anyway.
+**Назначение.**
+Агитация через проблему, но честная.
+Покупатель уже знает, что у него есть проблема, — иначе он бы не читал эту страницу; задача секции в том, чтобы показать: вы понимаете *конкретную фактуру* его проблемы лучше, чем он сам сможет её сформулировать.
+Статистика + короткая цитата решают это эффективно.
+Цитата особенно — вывести внутренний монолог покупателя на страницу — один из самых сильных элементов доверия на многих лендингах.
 
-**Common mistakes.**
-Inventing stats — buyers notice, especially B2B buyers who spend their lives around data.
-Using generic stats everyone has seen (Gartner, McKinsey pull-quotes).
-Making the problem so dramatic it sounds like a sales pitch ("your competitors are eating you alive").
-Skipping the quote — it's the section's emotional anchor.
-Padding this section into a wall of text; buyers skim, so density over length.
+**Что заполнить.**
+3–5 дата-пойнтов (статистика, цифры, соотношения), которые описывают текущую ситуацию читателя, плюс одна цитата, фиксирующая настроение.
+Цифры должны быть достаточно конкретными, чтобы выглядеть реальными.
+Если у вас нет опросов, перепишите это как наблюдения из собственной практики («я слышал эту фразу от 40+ топов за последний год…» или «вопрос №1 на первых звонках — это…»).
+Наблюдения из вашей работы кредибельнее, чем дженерик-статистика из отраслевых отчётов.
 
-### 5. Outcomes
+**Типичные ошибки.**
+Придумывать статистику — покупатели замечают, особенно B2B, которые всю жизнь сидят в данных.
+Использовать банальные цифры, которые видели все (Gartner, McKinsey-цитаты).
+Делать проблему такой драматичной, что звучит как sales pitch («конкуренты едят вас живьём»).
+Пропускать цитату — она эмоциональный якорь секции.
+Раздувать секцию в простыню текста; покупатели скиммят, поэтому плотность важнее длины.
 
-**Purpose.**
-This is the promise.
-The reader has to believe that 2–4 days of your time produces something specific and usable.
-Six outcome tiles (not three) is deliberate: it signals density and multiple deliverables without forcing you to make any single one gigantic.
-Six tiles arranged in a grid also looks like a "deliverables matrix," which subtly mirrors how corporate buyers expect consulting outputs to be structured.
+### 5. Outcomes — что получите
 
-**What to fill in.**
-4–6 outcome items.
-Each is a short name (2–3 words) plus a one-sentence description of what the buyer walks away with.
-Be concrete — "applicability map," "priorities," "roadmap" — not "clarity," "alignment," "synergy."
-Name artifacts when possible.
-If you deliver a document, call it a document.
-If you deliver a framework, name the framework.
+**Назначение.**
+Это обещание.
+Читатель должен поверить, что за 2–4 дня вашего времени действительно рождается что-то конкретное и применимое.
+Шесть плиток с результатами (а не три) — сознательный выбор: это сигналит плотность и множественность артефактов, не заставляя каждый отдельный результат быть размером с эпос.
+Шесть плиток в сетке выглядят как «матрица поставки» — это незаметно отзеркаливает то, как корпоративные покупатели привыкли видеть структуру консалтинговых артефактов.
 
-**Example.**
-Weak: "Clarity on your AI strategy."
-Better: "Applicability map — where exactly AI is useful in your business, and where applying it makes no sense."
-The weak version is a feeling.
-The better version is an artifact: a map, with two columns, that the buyer can take to their team on Monday.
+**Что заполнить.**
+4–6 пунктов с результатами.
+Каждый — короткое имя (2–3 слова) плюс одно предложение о том, что покупатель уносит.
+Будьте конкретны — «карта применимости», «приоритеты», «роадмап», а не «ясность», «выравнивание», «синергия».
+Называйте артефакты, когда можно.
+Если вы отдаёте документ — скажите, что это документ.
+Если отдаёте фреймворк — назовите фреймворк.
 
-**Common mistakes.**
-Describing what *you* do ("we analyze...") instead of what *they* get ("you walk away with...").
-Using feel-good abstractions.
-Hiding the tangible deliverable inside vague language.
-Repeating the same outcome in three different words to hit six tiles — better to have four sharp tiles than six mushy ones.
+**Пример.**
+Слабо: «Ясность по вашей AI-стратегии».
+Лучше: «Карта применимости — где именно AI полезен в вашем бизнесе и где применять его бессмысленно».
+Слабая версия — это чувство.
+Лучшая — артефакт: карта с двумя колонками, которую покупатель в понедельник принесёт своей команде.
 
-### 6. What this isn't (negative positioning)
+**Типичные ошибки.**
+Описывать, что *делаете вы* («мы анализируем…»), вместо того, что *получают они* («вы уносите…»).
+Уходить в абстракции про «хорошее самочувствие».
+Прятать конкретный артефакт за размытыми формулировками.
+Повторять один и тот же результат тремя разными словами, чтобы добить до шести плиток — четыре чёткие плитки лучше шести водянистых.
 
-**Purpose.**
-Trust-building through negation.
-By explicitly naming what your offer is *not* (not a training, not a lecture, not generic consulting, not infobiz), you tell the reader you understand the adjacent categories and you're actively differentiated.
-The reader, who has probably been burned by one of those adjacent categories, exhales.
-This section is cheap to write and enormously reassuring.
+### 6. What this isn't — чем это не является (negative positioning)
 
-**What to fill in.**
-3–5 "not X" items, each with one sentence explaining why.
-Pick the adjacent categories your buyers actually confuse you with — not generic "we're not X."
-If your buyers regularly ask "is this like a corporate training?" then "not a training" is the right negation.
-If they ask "is this just advisory?" then "not generic consulting" belongs here.
-The more specific the enemy, the more credible the distinction.
+**Назначение.**
+Доверие через отрицание.
+Когда вы явно называете, чем ваш оффер *не является* (не тренинг, не лекция, не дженерик-консалтинг, не инфобиз), вы сообщаете читателю, что знаете соседние категории и сознательно от них отстроились.
+Читатель, которого скорее всего уже обжигали в одной из соседних категорий, выдыхает.
+Эта секция дёшева в написании и колоссально успокаивает.
 
-**Common mistakes.**
-Being negative about competitors by name (don't — it reads as bitter).
-Saying "not X" without explaining why (the explanation is the trust move).
-Listing things nobody was going to confuse you with anyway ("not a pizza restaurant").
-Making this section longer than the Outcomes section — negation should be a small confident beat, not the main act.
+**Что заполнить.**
+3–5 пунктов вида «не X», каждый с одним предложением объяснения — почему.
+Выбирайте соседние категории, с которыми ваши покупатели *реально* вас путают, а не абстрактные «мы не X».
+Если вас регулярно спрашивают «это как корпоративный тренинг?» — отрицайте тренинг.
+Если спрашивают «это обычный advisory?» — отрицайте дженерик-консалтинг.
+Чем конкретнее «противник», тем убедительнее отличие.
 
-### 7. Format (three steps)
+**Типичные ошибки.**
+Негативить про конкретных конкурентов по имени (не надо — звучит желчно).
+Писать «не X» без объяснения почему (объяснение — это и есть ход доверия).
+Отрицать то, с чем вас и так никто не путал («не пиццерия»).
+Делать эту секцию длиннее, чем Outcomes — отрицание должно быть коротким уверенным тактом, а не главным номером программы.
 
-**Purpose.**
-Operational transparency.
-The reader has to see that you have a real process, not just "we'll figure it out together."
-Three steps (before / during / after) mirrors how the buyer will mentally book this into their calendar.
-It also implicitly signals that you've run this more than once — you wouldn't have a documented three-step process for your first engagement.
+### 7. Format — формат, три шага
 
-**What to fill in.**
-Three phases with a time marker (e.g. "1–2 weeks before," "2–4 days on-site," "on completion"), a short title, and a 1–2 sentence description.
-Add a note underneath that quantifies total engagement time — it's the single most-asked question.
-If your format includes a follow-up component (e.g. a 30-day check-in), mention it here or in the FAQ.
+**Назначение.**
+Операционная прозрачность.
+Читатель должен увидеть, что у вас есть реальный процесс, а не «разберёмся по ходу».
+Три шага (до / во время / после) отзеркаливают то, как покупатель будет мысленно закладывать это в календарь.
+Это заодно намекает, что вы проводили такое не впервые — у вас бы не было задокументированного трёхшагового процесса для первого в жизни проекта.
 
-**Common mistakes.**
-More than three steps — readers stop counting.
-Abstract phase names ("discovery," "alignment") that don't tell anyone what actually happens.
-Forgetting to say how long the whole thing takes.
-Making the "before" phase sound heavier than the "during" phase — buyers want to know they're paying for substance during, not homework before.
+**Что заполнить.**
+Три фазы с временным маркером (например, «за 1–2 недели до», «2–4 дня на площадке», «по завершении»), короткий заголовок и описание в 1–2 предложения.
+Добавьте подпись снизу, которая суммирует общую длительность — это самый частый вопрос.
+Если в формате есть follow-up (например, 30-дневный check-in), упомяните его либо здесь, либо в FAQ.
 
-### 8. About the author
+**Типичные ошибки.**
+Больше трёх шагов — читатель перестаёт считать.
+Абстрактные названия фаз («discovery», «alignment»), которые не говорят, что там реально происходит.
+Забыть написать, сколько всё это длится в сумме.
+Сделать фазу «до» тяжелее фазы «во время» — покупатель хочет платить за суть во время, а не за домашку до.
 
-**Purpose.**
-Authority transfer.
-For a premium advisory offer, the buyer is hiring a person, not a methodology.
-This section has to do two things simultaneously: establish credentials (why you) and feel human (not a LinkedIn dump).
-Stats (years, continents, sessions), credentials (founder, author, speaker), and a short bio paragraph together tell a compressed career story.
+### 8. About the author — про автора
 
-**What to fill in.**
-Name, role line, 1–2 bio paragraphs, three stat tiles (e.g. years / geographies / clients), 3–4 credentials, optional photo, links to LinkedIn and personal site.
-The bio should be specific — dates, company names, domains — not a generic career summary.
-First person works better than third person on a solo-practitioner page; third person is for agencies.
+**Назначение.**
+Передача авторитета.
+В премиальном advisory-оффере покупатель нанимает человека, а не методологию.
+Эта секция должна одновременно сделать две вещи: установить credentials (почему вы) и ощущаться по-человечески (а не как свалка из LinkedIn).
+Цифры (годы, страны, сессии), регалии (основатель, автор, спикер) и короткий био-параграф — вместе рассказывают сжатую карьерную историю.
 
-**Common mistakes.**
-Third-person corporate bio that sounds like a LinkedIn summary ("John is a passionate strategist with over 20 years...").
-Listing 15 credentials (dilutes signal — pick your four best).
-Stats that are obviously inflated or unverifiable ("500+ clients served" when nobody can check).
-Missing LinkedIn — serious buyers will look anyway, so make it easy.
-Using a stock-looking photo or a corporate headshot from 2014 — a recent, natural photo converts better than a glamour shot.
+**Что заполнить.**
+Имя, роль, 1–2 параграфа bio, три плитки с цифрами (например, годы / география / клиенты), 3–4 регалии, опционально фото, ссылки на LinkedIn и личный сайт.
+Bio должно быть конкретным — даты, названия компаний, домены — а не дженерик-обзор карьеры.
+Для соло-практика лучше работает первое лицо; третье лицо — это для агентств.
 
-### 9. Industries
+**Типичные ошибки.**
+Корпоративное bio в третьем лице, которое звучит как summary из LinkedIn («Иван — страстный стратег с более чем 20-летним опытом…»).
+Перечислить 15 регалий (размывает сигнал — выберите четыре лучших).
+Цифры, которые очевидно раздуты или непроверяемы («500+ клиентов», где никто не может это проверить).
+Отсутствие LinkedIn — серьёзный покупатель всё равно найдёт, так облегчите задачу.
+Стоковое фото или корпоративный headshot 2014 года — свежее естественное фото конвертит лучше глянцевого.
 
-**Purpose.**
-Specialization signal.
-Buyers want to know "have you worked in something like mine?"
-Naming 4–8 industries does two jobs: it says "yes" to people in those verticals, and it says "probably not the right person" to outliers, which is good — you don't want to take on industries you don't understand.
+### 9. Industries — отрасли
 
-**What to fill in.**
-A short intro sub-line and 4–8 industries you actually deliver in.
-If you're a generalist, say so and remove the list, but know that this weakens the page — specialists convert better than generalists at premium prices.
-If you have a strongest vertical (e.g. fintech for you), consider leading with it and listing others as secondary.
+**Назначение.**
+Сигнал специализации.
+Покупатель хочет знать: «работал ли ты с чем-то похожим на моё?»
+Когда вы называете 4–8 отраслей, вы делаете две вещи: говорите «да» людям из этих вертикалей и говорите «возможно, не ко мне» остальным, что хорошо — вы не хотите брать отрасли, в которых не разбираетесь.
 
-**Common mistakes.**
-Listing 15 industries to "capture everything" — reads as unfocused.
-Listing industries you've touched once — if a fintech CEO hires you on the strength of this claim and you've never actually worked in fintech, it ends badly.
-Putting industries you want to get into but haven't delivered in yet — aspirational claims erode trust when tested.
-Using fuzzy labels like "technology" or "services" that mean nothing.
+**Что заполнить.**
+Короткая вводная фраза и 4–8 отраслей, в которых вы реально делали работу.
+Если вы дженералист — скажите это и уберите список, но знайте: это ослабляет страницу. Специалисты конвертят лучше, чем дженералисты, на премиальном прайсе.
+Если у вас есть сильнейшая вертикаль (например, финтех), имеет смысл поставить её первой, а остальные — как вторичные.
 
-### 10. Pricing (three tiers)
+**Типичные ошибки.**
+Перечислить 15 отраслей, чтобы «охватить всё» — читается как нефокусированность.
+Перечислять отрасли, с которыми у вас был один проект — если финтех-CEO наймёт вас на основании этой заявки, а вы в финтехе никогда реально не работали, это плохо кончится.
+Ставить отрасли, в которые вы *хотите* зайти, но не работали там — аспирационные заявления разваливаются при первой проверке.
+Использовать размытые ярлыки вроде «технологии» или «услуги», которые ничего не значат.
 
-**Purpose.**
-Price transparency + tier anchoring.
-By showing three named packages with price ranges, you do several things at once: you filter budget-incompatible buyers, you signal confidence, you give the "most chosen" tier a relative anchor (the decoy effect — the cheap tier makes the middle one look reasonable, the expensive tier makes it look like a deal), and you remove the single biggest friction point in premium services sales.
-See the dedicated section below for why three is the right number.
+### 10. Pricing — тарифы, три пакета
 
-**What to fill in.**
-Three tier cards: name, price range (not exact number — preserves negotiation room), tagline, 1-sentence description, 4–6 feature bullets, CTA.
-Mark the middle one with a "Most chosen" badge.
-Add a small note about what's not included (travel, per diem, follow-up sessions) and currency.
-Feature lists should visibly grow as you go up the tiers — tier 2 has everything in tier 1 plus more, tier 3 has everything in tier 2 plus more.
+**Назначение.**
+Прозрачность по цене + якорение через тарифную сетку.
+Когда вы показываете три именованных пакета с диапазонами цен, вы одновременно делаете несколько вещей: отсеиваете покупателей с несовместимым бюджетом, сигналите уверенность, даёте «самому популярному» тарифу относительный якорь (decoy effect — дешёвый пакет делает средний разумным, дорогой делает средний похожим на выгодную сделку) и снимаете главное трение в продажах премиальных услуг.
+Про то, почему именно три, — отдельная секция ниже.
 
-**Common mistakes.**
-Hiding price behind "contact us" — defeats the whole section.
-Making the cheap tier actually cheap (it should be a real offer, not a shame-tier — if you'd be embarrassed to deliver the cheap tier, don't list it).
-Making the feature lists identical length across all three (they should visibly grow).
-Forgetting the badge on the middle tier.
-Listing features in different orders across tiers so the reader can't compare them at a glance.
+**Что заполнить.**
+Три карточки пакетов: название, диапазон цены (не точное число — оставляет пространство для торга), слоган, описание в одно предложение, 4–6 буллетов с фичами, CTA.
+На среднем поставьте бейдж «Most chosen» (самый выбираемый).
+Добавьте мелкий примечательный блок — что не входит (трансфер, per diem, follow-up сессии) и валюта.
+Списки фич должны визуально расти от пакета к пакету: во втором есть всё из первого плюс ещё, в третьем — всё из второго плюс ещё.
 
-### 11. Not a fit (disqualification)
+**Типичные ошибки.**
+Прятать цену за «contact us» — убивает весь смысл секции.
+Делать дешёвый пакет *реально* дешёвым (в смысле — позорным): он должен быть настоящим оффером, а не пакетом-пугалом. Если вам было бы стыдно его поставить, не ставьте вовсе.
+Делать списки фич одинаковой длины у всех трёх пакетов (они должны визуально расти).
+Забыть бейдж на среднем пакете.
+Перечислять фичи в разном порядке у разных пакетов — читатель не может сравнить с одного взгляда.
 
-**Purpose.**
-This is the single most confidence-projecting section on the page, and also the most overlooked.
-By explicitly telling certain buyers "don't contact me," you do three things: you filter out bad-fit leads (who waste your time on calls), you signal that you're selective (which premium buyers read as status), and you give good-fit buyers a small ego-boost ("I'm not one of those tire-kickers").
-This is counter-intuitive to anyone trained in "capture every lead," but it works — especially at premium price points.
+### 11. Not a fit — дисквалификация
 
-**What to fill in.**
-3–5 specific disqualifier profiles.
-Be honest but not mean.
-Frame them as buyer-side mismatches ("people looking for X") not insults ("tire-kickers").
-Think about the actual inbound you've rejected and describe those patterns.
-Common disqualifiers: people shopping on price, people looking for implementation hands instead of strategy, people who want a lecture, people who can't commit team time.
+**Назначение.**
+Это самая уверенная в себе секция на странице и одновременно самая недооценённая.
+Когда вы явно говорите определённым покупателям «не пишите мне», вы делаете три вещи: отсеиваете плохо подходящих лидов (которые тратили бы ваше время на звонках), сигналите, что вы избирательны (премиальный покупатель читает это как статус), и слегка подкармливаете эго хорошо подходящим покупателям («я не из тех ротозеев»).
+Это контринтуитивно для всех, кого учили «снимайте каждого лида», но работает — особенно в премиальном ценовом сегменте.
 
-**Common mistakes.**
-Skipping this section because it feels negative — it's the single highest-leverage section on the page.
-Making it too aggressive ("if you're cheap, go away") — the tone should be matter-of-fact, not defensive.
-Describing disqualifiers so narrow that nobody reads themselves into them.
-Repeating the "Who it's for" section in inverse — this section is about disqualifiers, not a mirror of the positive audience.
+**Что заполнить.**
+3–5 конкретных профилей дисквалификации.
+Честно, но без хамства.
+Формулируйте как несовпадения со стороны покупателя («люди, которые ищут X»), а не как оскорбления («халявщики»).
+Вспомните реальные входящие, от которых вы отказывались, — и опишите эти паттерны.
+Частые дисквалификаторы: люди, которые шопят по цене; люди, которым нужны руки на имплементацию, а не стратегия; люди, которым нужна лекция; люди, которые не могут выделить время команды.
+
+**Типичные ошибки.**
+Пропустить эту секцию, потому что она «негативная», — это секция с самым высоким рычагом на всей странице.
+Сделать тон слишком агрессивным («если ты жмот — шагай лесом»); тон должен быть спокойно-деловой, не оборонительный.
+Описать дисквалификаторы так узко, что никто себя в них не узнаёт.
+Повторить секцию «Для кого» в зеркальном виде — эта секция про дисквалификаторы, а не про инверсию положительной аудитории.
 
 ### 12. FAQ
 
-**Purpose.**
-Pre-empt the objections that would otherwise force a sales call.
-Each FAQ item is an objection in question form.
-The buyer's brain is generating these in real time as they read the page — if you answer them inline, they reach the CTA without an unresolved blocker.
-This also shortens your actual sales calls, because the answered questions don't come up again.
+**Назначение.**
+Снять возражения, которые иначе заставили бы покупателя идти на звонок.
+Каждый пункт FAQ — это возражение в форме вопроса.
+Мозг покупателя генерирует их в реальном времени по мере чтения страницы; если вы отвечаете прямо в тексте, он доходит до CTA без нерешённых блокеров.
+Это заодно укорачивает реальные звонки с продажами — отвеченные вопросы на них больше не всплывают.
 
-**What to fill in.**
-5–8 questions in the buyer's voice (not marketing-speak).
-Answers should be 2–4 sentences — long enough to be substantive, short enough to skim.
-Prioritize: how deep is your prep, what's the deliverable, do you implement or only advise, why this format, remote vs on-site, how to pick a tier.
-Write the questions the way a buyer would actually ask them, not the way you'd phrase them.
+**Что заполнить.**
+5–8 вопросов на языке покупателя (не маркетинговом).
+Ответы — 2–4 предложения: достаточно, чтобы быть по существу; достаточно коротко, чтобы скиммить.
+Приоритет: насколько глубока ваша подготовка, что на выходе, делаете ли вы имплементацию или только советуете, почему именно такой формат, удалённо или на площадке, как выбрать тариф.
+Формулируйте вопросы так, как их реально задаёт покупатель, а не так, как сформулировали бы вы.
 
-**Common mistakes.**
-Marketing questions ("Why choose us?") that sound written by you, not by a buyer — these read as fake.
-Answers that dodge the question ("it depends on your situation").
-Too many FAQs (10+) — reader stops reading.
-Missing the obvious blockers (price, scope, timeline, fit).
-Using FAQ as hidden sales copy — the section works because it's a utility, not a pitch.
+**Типичные ошибки.**
+Маркетинговые вопросы («Почему выбирают нас?»), которые звучат написанными продавцом, а не покупателем, — читаются как фальшивка.
+Ответы, уходящие от вопроса («зависит от вашей ситуации»).
+Слишком много FAQ (10+) — читатель перестаёт читать.
+Пропустить очевидные блокеры (цена, скоуп, сроки, fit).
+Использовать FAQ как скрытый sales-текст — секция работает, пока она утилитарна, а не пока она питч.
 
-### 13. Final CTA
+### 13. Final CTA — финальный призыв
 
-**Purpose.**
-One last ask, framed as a lightweight commitment.
-The buyer has now read (or skimmed) the whole page.
-This is where you convert attention into contact.
-Two CTAs — a primary form and a secondary direct-contact option — lets the buyer self-select their preferred channel.
-The small-text reassurance ("I read every submission personally, reply within 48 hours") removes the last friction: "will anyone actually read this?"
+**Назначение.**
+Последняя просьба, оформленная как лёгкое обязательство.
+Покупатель к этому моменту уже прочёл (или проскиммил) всю страницу.
+Это точка, где внимание превращается в контакт.
+Два CTA — основная форма и вторичный прямой контакт — позволяют покупателю самому выбрать удобный канал.
+Мелкая подпись-успокоение («я читаю каждую заявку лично, отвечаю в течение 48 часов») снимает последнее трение: «это вообще кто-то читает?»
 
-**What to fill in.**
-A short title (one sentence), a sub-line describing what happens after they submit, a primary CTA (form), a secondary CTA (direct email/message), and a short reassurance line about how the contact is handled.
-The reassurance is small-text on purpose — it's a whisper, not a promise.
+**Что заполнить.**
+Короткий заголовок (одно предложение), подпись о том, что произойдёт после отправки формы, основной CTA (форма), вторичный CTA (прямой email/мессенджер) и короткая строчка-успокоение о том, как обрабатывается контакт.
+Успокоение специально мелким шрифтом — это шёпот, не обещание.
 
-**Common mistakes.**
-Making the form intimidating ("send us an RFP with budget, timeline, and stakeholder list").
-No reassurance line — buyers quietly assume they're entering a mass-market funnel.
-Only one CTA — different buyers prefer different channels (some want a form, some want to email directly, some want Telegram/WhatsApp).
-Using the same headline as the hero — this is a second beat, not a repeat.
+**Типичные ошибки.**
+Сделать форму отпугивающей («пришлите RFP с бюджетом, сроками и списком стейкхолдеров»).
+Не поставить строчку-успокоение — покупатель молча предполагает, что попадает в массовую воронку.
+Только один CTA — у разных покупателей разные предпочтения: кому-то удобна форма, кому-то email, кому-то Telegram или WhatsApp.
+Использовать тот же заголовок, что и в hero, — это второй такт, а не повтор.
 
-### 14. Footer
+### 14. Footer — подвал
 
-**Purpose.**
-Wrap-up + lightweight secondary navigation + rights notice.
-Most readers don't scroll the footer, but search engines do, and serious buyers sometimes scan it for "is this a real business?" signals (real name, real links, real year).
+**Назначение.**
+Завершение + лёгкая вторичная навигация + правовая строка.
+Большинство читателей не скроллит подвал, но поисковики скроллят; серьёзный покупатель иногда сканирует его на предмет «это реальный бизнес?» — реальное имя, реальные ссылки, реальный год.
 
-**What to fill in.**
-A short tagline repeating your positioning, 3 column groups of links (format tiers, audience segments, contact channels), copyright line with current year.
-Optional: a language toggle if bilingual, a small "back to top" link.
+**Что заполнить.**
+Короткий слоган, повторяющий ваше позиционирование, три колонки со ссылками (тарифы, сегменты аудитории, каналы связи), строчка копирайта с текущим годом.
+Опционально: language toggle, если лендинг двуязычный, и маленькая ссылка «наверх».
 
-**Common mistakes.**
-Footer bloat (terms, privacy, cookies, newsletter, social, blog) — you don't need most of this for a consulting offer.
-Missing the year or showing a stale year — dead-site signal.
-Footer that repeats the full nav — redundant.
-Putting a long paragraph bio in the footer — it belongs in the About section, not here.
+**Типичные ошибки.**
+Перегруженный подвал (terms, privacy, cookies, рассылка, соцсети, блог) — для консалтингового оффера 90% из этого не нужно.
+Отсутствие года или устаревший год — сигнал «сайт мёртв».
+Подвал, повторяющий полную навигацию, — избыточно.
+Длинный параграф-bio в подвале — это место в About, не здесь.
 
-## The three-tier pricing principle
+## Принцип трёх тарифов
 
-Three tiers is a load-bearing choice, not a cosmetic one.
-Here's why the exact number matters and how to calibrate the three.
+Три пакета — это несущая конструкция, а не косметический выбор.
+Ниже — почему именно три и как эти три откалибровать.
 
-**Why three, not one or two.**
-One tier is perceived as "take it or leave it" and kills negotiation tone.
-It also removes the anchoring mechanic entirely — without comparison, the single price reads as either fine or too much, with no middle ground.
-Two tiers creates a binary pick where the buyer defaults to the cheaper one (loss-aversion — "why pay more if I don't have to?").
-Four or more tiers triggers decision fatigue and the buyer postpones, which in consulting sales usually means "never."
-Three is the only number that reliably lets you anchor.
+**Почему три, а не один или два.**
+Один пакет воспринимается как «бери или уходи» и убивает интонацию переговоров.
+Он заодно полностью убирает механику якорения — без сравнения единичная цена читается либо как нормальная, либо как «многовато», без середины.
+Два пакета создают бинарный выбор, в котором покупатель по умолчанию скатывается к дешёвому (loss aversion — «зачем платить больше, если можно не платить»).
+Четыре и больше запускают усталость от решения, и покупатель откладывает — в консалтинге это обычно означает «никогда».
+Три — единственное число, которое надёжно даёт якорение.
 
-**Why the middle wins.**
-In a three-tier display, the cheap tier sets a floor and makes the middle look reasonable.
-The expensive tier sets a ceiling and makes the middle look like a good deal.
-The middle tier — marked "most chosen" or "recommended" — becomes the default, which is what you want.
-In practice, roughly 60–70% of inbound on a three-tier landing selects the middle tier, 20–30% the cheap one, and 5–15% the top one.
-Those top-tier inbounds tend to be your best clients — buyers who read the top tier and chose it did so deliberately, not by default.
+**Почему средний выигрывает.**
+В трёхтарифной витрине дешёвый пакет задаёт пол и делает средний разумным.
+Дорогой задаёт потолок и делает средний похожим на выгодную сделку.
+Средний пакет — отмеченный «most chosen» или «recommended» — становится дефолтом, чего вы и хотели.
+На практике примерно 60–70% входящих по трёхтарифному лендингу выбирают средний, 20–30% — дешёвый, 5–15% — верхний.
+Эти верхние входящие — обычно ваши лучшие клиенты: те, кто прочитал топ-тариф и сознательно его взял, а не по умолчанию.
 
-**Price spread matters.**
-If your cheap tier is $5k and your top tier is $50k, the middle ($20k) reads as the safe center.
-If the spread is too narrow ($10k / $12k / $15k), the anchoring collapses and buyers just pick the cheapest.
-Aim for the top tier to be roughly 2.5–4× the cheap one.
-The middle tier should sit around 2× the cheap tier.
+**Разброс по цене важен.**
+Если у вас дешёвый пакет $5k, а верхний $50k, средний ($20k) читается как безопасный центр.
+Если разброс узкий ($10k / $12k / $15k), якорение схлопывается, и покупатели просто берут самый дешёвый.
+Ориентир: верхний пакет — примерно в 2.5–4× дороже дешёвого, средний — около 2× дешёвого.
 
-**Ranges vs exact numbers.**
-Use price ranges ($10k–$15k) rather than exact numbers unless you have a hard reason to quote single numbers.
-Ranges preserve negotiation room, acknowledge that scope genuinely varies, and — importantly — prevent buyers from anchoring on the lowest number.
-Paradoxically, a range like "$12k–$18k" tends to close at $15k, whereas a flat "$12k" closes at $12k minus a discount the buyer asks for.
+**Диапазоны vs точные числа.**
+Используйте диапазоны цен ($10k–$15k), а не точные числа, если нет жёсткой причины давать одно число.
+Диапазоны оставляют пространство для торга, честно признают, что скоуп реально варьируется, и — важно — не дают покупателю заякориться на нижней цифре.
+Парадокс: диапазон «$12k–$18k» обычно закрывается в районе $15k, тогда как плоская цена «$12k» закрывается в $12k минус скидка, которую покупатель попросит.
 
-**The cheap tier must be real.**
-A common mistake is making the cheap tier deliberately bad so buyers skip it.
-This backfires — buyers read the cheap tier as a reflection of your quality floor.
-If the cheap tier looks embarrassing, the whole page looks embarrassing.
-The cheap tier should be a genuine, deliverable offer you'd be happy to sell; it just covers less scope than the middle one.
+**Дешёвый пакет должен быть настоящим.**
+Частая ошибка — сознательно сделать дешёвый пакет плохим, чтобы покупатели его не выбирали.
+Это даёт обратный эффект — покупатели читают дешёвый тариф как отражение вашего качественного пола.
+Если дешёвый пакет выглядит стыдно, вся страница выглядит стыдно.
+Дешёвый пакет должен быть настоящим оффером, который вам не стыдно продать; он просто покрывает меньший скоуп, чем средний.
 
-**The top tier doesn't have to close often.**
-The top tier's primary job is to make the middle tier look reasonable.
-If you close one top-tier deal per quarter, it's doing its job.
-Don't water down the top tier to "increase conversions" — that just collapses the spread and flattens the anchor.
+**Верхний пакет не обязан закрываться часто.**
+Главная работа верхнего пакета — делать средний разумным.
+Если вы закрываете одну сделку по верхнему тарифу в квартал — он работает как надо.
+Не разбавляйте верхний тариф, чтобы «поднять конверсию», — вы так просто схлопнете разброс и уплощите якорь.
 
-## Bilingual consideration
+## Двуязычность
 
-The template ships with both Russian and English content by default.
-The copy lives in two source-of-truth markdown files (`content.en.md`, `content.ru.md`) and is synced into a single runtime data file (`landing/data.js`) where `window.DATA = { ru, en }`.
-A language toggle in the UI switches between them at runtime.
-To strip to one language: delete one of the content files and remove the matching key from `landing/data.js` (keep the surviving branch's JSON shape identical).
-To add a third language: add a `content.xx.md` file, add a third key (e.g. `de`) to `window.DATA` in `landing/data.js`, and extend the language toggle in `landing/components.jsx`.
-Keep bilingual parity rigid — every key that exists in one language must exist in every other language, or components will render `undefined` and you'll get blank sections on a live page.
-If you keep two languages, be aware that it doubles your maintenance burden: every copy change has to land in both files, and a drift between them is the most common bug on this template.
+Шаблон по умолчанию поставляется с русским и английским контентом.
+Копирайт живёт в двух markdown-файлах — источниках правды (`content.en.md`, `content.ru.md`) — и синкается в один рантайм-файл данных (`landing/data.js`), где лежит `window.DATA = { ru, en }`.
+Переключатель языка в UI переключает версии на лету.
+Чтобы оставить один язык: удалите один из content-файлов и уберите соответствующий ключ в `landing/data.js` (сохранённая ветка должна остаться идентичной по форме JSON).
+Чтобы добавить третий язык: создайте `content.xx.md`, добавьте третий ключ (например, `de`) в `window.DATA` в `landing/data.js` и расширьте переключатель в `landing/components.jsx`.
+Bilingual-паритет держите жёстким: любой ключ, который есть в одном языке, должен быть во всех остальных, иначе компоненты начнут рендерить `undefined`, и на живой странице вылезут пустые секции.
+Если вы оставляете два языка, помните: это удваивает нагрузку на поддержку. Любая правка копирайта должна попасть в оба файла, и самый частый баг этого шаблона — drift между ними.
 
-## How to adapt the template
+## Как адаптировать шаблон под себя
 
-1. **Fill in `content.en.md` and/or `content.ru.md` with your copy.**
-   Open one or both content files and replace every placeholder in square brackets (`[Your Name]`, `[X]+ years`, `[Your credential N]`, `$[X]k–$[Y]k`, etc.) with your real values.
-   This is the slowest step — budget real time for it, often several hours if you've never written positioning before.
-   Think of it as writing your own positioning document; the landing is just the render of it.
-   Don't skip sections because you don't have content yet — if you're going to launch, you need the content; get it done now.
+1. **Заполните `content.en.md` и/или `content.ru.md` своим копирайтом.**
+   Откройте один или оба content-файла и замените каждый placeholder в квадратных скобках (`[Your Name]`, `[X]+ years`, `[Your credential N]`, `$[X]k–$[Y]k` и т.д.) на свои реальные значения.
+   Это самый медленный шаг — заложите на него реальное время, часто несколько часов, если вы никогда раньше не писали позиционирование.
+   Думайте об этом как о написании собственного позиционирующего документа; лендинг — просто его рендер.
+   Не пропускайте секции из-за того, что у вас «пока нет контента»: если вы собираетесь запускаться, контент нужен — добудьте его сейчас.
 
-2. **Sync copy into `landing/data.js` (or use the bootstrap prompt — see `BOOTSTRAP-PROMPT.md`).**
-   Port your changes from the markdown files into `landing/data.js` so `window.DATA.ru` and `window.DATA.en` reflect the new copy.
-   You can do this manually if you're comfortable editing a JS object literal, or let the AI handle the whole interview-and-sync flow using `BOOTSTRAP-PROMPT.md`.
-   The bootstrap prompt is the recommended path for non-technical users — it interviews you, writes both the markdown and the runtime data, and tells you exactly what's left to do manually.
+2. **Синкните копирайт в `landing/data.js` (или используйте bootstrap-промпт — см. `BOOTSTRAP-PROMPT.md`).**
+   Перенесите правки из markdown-файлов в `landing/data.js`, чтобы `window.DATA.ru` и `window.DATA.en` отражали новый копирайт.
+   Можно руками, если вы спокойно редактируете JS-object literal; можно отдать всю задачу AI — он проведёт интервью и засинкает через `BOOTSTRAP-PROMPT.md`.
+   Bootstrap-промпт — рекомендованный путь для нетехнических пользователей: он проводит интервью, пишет и markdown, и рантайм-данные и говорит, что ещё осталось сделать руками.
 
-3. **Replace theme colors and logo in `preview/index.html`.**
-   Open `preview/index.html` and swap the Tailwind theme colors (look for the inline config block in the `<script>` tag) and the inline SVG logo with your own.
-   The CSS custom properties in the same file (`--surface`, `--fg`, etc.) also control the light/dark theme palette — tweak there for brand colors.
-   If you don't have a logo, a typeset wordmark works fine; don't block the launch on logo design.
+3. **Замените цвета темы и логотип в `preview/index.html`.**
+   Откройте `preview/index.html` и поменяйте цвета темы Tailwind (ищите inline-конфиг внутри тега `<script>`) и SVG-логотип на свой.
+   CSS-переменные в том же файле (`--surface`, `--fg` и т.д.) управляют палитрой светлой/тёмной темы — правьте их под фирменные цвета.
+   Если логотипа нет, хватит набранного текстом wordmark; не блокируйте запуск дизайном логотипа.
 
-4. **Replace `index.html` (coming-soon placeholder) with your own or swap preview as root.**
-   The root `index.html` ships as a "coming soon" placeholder so you can deploy before the full landing is ready.
-   When you're ready to launch, either edit `index.html` to be your real landing, or swap `preview/index.html` into the root position and keep the old placeholder as a backup.
-   See `DEPLOY.md` for the exact commands.
+4. **Замените `index.html` (coming-soon placeholder) своим или промоутьте preview в корень.**
+   Корневой `index.html` идёт в поставке как «coming soon» placeholder — это даёт возможность задеплоиться раньше, чем полный лендинг готов.
+   Когда готовы к запуску, либо перепишите `index.html` в свой настоящий лендинг, либо промоутьте `preview/index.html` в корень и оставьте старый placeholder бэкапом.
+   Точные команды — в `DEPLOY.md`.
 
-5. **Preview locally: `python3 -m http.server 4000`.**
-   Run `python3 -m http.server 4000` in the repo root, then open `http://localhost:4000/preview/` for the full landing and `http://localhost:4000/` for the placeholder.
-   No build step — edits show up on reload.
-   If port 4000 is in use, pick any other free port; the template doesn't care.
+5. **Локальный preview: `python3 -m http.server 4000`.**
+   Запустите `python3 -m http.server 4000` в корне репо и откройте `http://localhost:4000/preview/` для полного лендинга и `http://localhost:4000/` для placeholder'а.
+   Build-step нет — правки видны при перезагрузке.
+   Если порт 4000 занят, возьмите любой другой свободный; шаблону всё равно.
 
-6. **Deploy — see `DEPLOY.md`.**
-   The template is designed to run on cheap shared hosting alongside a PHP/WordPress backend — no Node, no VPS, no CI pipeline required.
-   `DEPLOY.md` covers the SCP upload and LiteSpeed cache purge flow.
-   If you're on a different host (Netlify, Vercel static, S3+CloudFront), the static files are portable — drop them anywhere that serves HTML/JS/CSS.
+6. **Деплой — см. `DEPLOY.md`.**
+   Шаблон рассчитан на дешёвый shared-хостинг рядом с PHP/WordPress-бэкендом — без Node, без VPS, без CI-пайплайна.
+   В `DEPLOY.md` описан SCP-аплоад и purge LiteSpeed-кэша.
+   Если вы на другом хостинге (Netlify, Vercel static, S3+CloudFront), статические файлы портабельны — кладите куда угодно, что умеет отдавать HTML/JS/CSS.
 
-## About the methodology author
+## Об авторе методологии
 
-This template and methodology come from the practical consulting work of **Alexey Krol** — technology entrepreneur and advisor who ran this methodology across his own consulting business before turning it into an open template for the community.
+Этот шаблон и методология выросли из практической консалтинговой работы **Алексея Крола** — технологического предпринимателя и advisor'а, который сначала прогнал эту методологию через собственный консалтинговый бизнес, а потом превратил её в открытый шаблон для коммьюнити.
 
 - LinkedIn: https://www.linkedin.com/in/alexkrol/
 - Personal site: https://alexeykrol.com/
-- Organization: AI Agents Incubator
+- Organization: **AI Agents Incubator**
 
-The methodology is battle-tested on the author's own advisory offer and is now shared openly for anyone building a consulting practice.
+Методология обкатана на собственном advisory-оффере автора и теперь выложена открыто — для всех, кто строит свою консалтинговую практику.

@@ -1,68 +1,73 @@
+**Язык:** Русский · [English](README.en.md)
+
 # AI Agents Incubator — Consulting Template
 
-A production-ready, zero-build React landing template for consultants, advisors, and boutique firms.
-Ships with a proven **methodology** (how to position an advisory offer) and an AI-driven
-**bootstrap prompt** that customizes the whole landing for you through a short interview.
+Готовый к продакшену zero-build React шаблон лендинга для консультантов, advisory-практик и бутиковых команд.
+В комплекте — проверенная **методология** (как упаковать advisory-оффер) и **bootstrap-промпт**
+для AI, который за короткое интервью кастомизирует весь лендинг под вас.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AI-agents-incubator/consulting-landing-template)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AI-agents-incubator/consulting-landing-template)
 
 ---
 
-## What this is
+## Что это такое
 
-Three things in one package:
+Три вещи в одном пакете:
 
-1. **A template** — a bilingual (RU/EN), dark/light, single-page landing that runs in the
-   browser with zero build step. Drop it on any static host and it works.
-2. **A methodology** — the 14-section structure, the copy logic, the three-tier pricing
-   principle, and the disqualification mechanics that make an advisory landing actually
-   convert. See [METHODOLOGY.md](METHODOLOGY.md).
-3. **An AI customization flow** — a copy-pasteable prompt for Claude Code that interviews
-   you for ten minutes and rewrites every placeholder into your own positioning. See
-   [BOOTSTRAP-PROMPT.md](BOOTSTRAP-PROMPT.md).
+1. **Шаблон** — двуязычный (RU/EN) одностраничный лендинг со светлой и тёмной темой,
+   который работает прямо в браузере без билда. Заливаете на любой статический хостинг —
+   и всё работает.
+2. **Методология** — структура из 14 секций, логика копирайта, принцип трёх тарифов
+   и механика дисквалификации, благодаря которым advisory-лендинг действительно конвертит.
+   См. [METHODOLOGY.md](METHODOLOGY.md).
+3. **Процесс AI-кастомизации** — готовый промпт для Claude Code, который за десять минут
+   проводит с вами интервью и переписывает все плейсхолдеры под ваше позиционирование.
+   См. [BOOTSTRAP-PROMPT.md](BOOTSTRAP-PROMPT.md).
 
-This makes the template a method + tool + starter kit. Fork it, run the bootstrap prompt,
-review the diff, deploy.
-
----
-
-## Who this is for
-
-- **Independent consultants and advisors** ready to productize their offer
-- **Boutique consulting firms** (2–10 people) who want a premium landing without the agency bill
-- **Domain experts** transitioning from salaried specialist to advisory practice
-- **Educators teaching consulting** — students get a working artifact plus the reasoning behind it
-
-Not a fit for SaaS founders, marketing agencies, or people with no delivery experience yet —
-the positioning logic baked into this template assumes you actually sell advisory work.
+В сумме получается метод + инструмент + стартовый набор. Форкните, запустите bootstrap-промпт,
+просмотрите diff, задеплойте.
 
 ---
 
-## The problem it solves
+## Для кого это
 
-Most consulting landings fail in one of three ways: they read like corporate mush, they
-hide prices and feel like a black box, or they smell like an info-product funnel. This
-template is structured around the opposite: clear positioning, explicit pricing tiers,
-honest disqualification. See [METHODOLOGY.md](METHODOLOGY.md) for the full reasoning
-behind each section.
+- **Независимые консультанты и advisor'ы**, готовые упаковать свой оффер в продукт
+- **Бутиковые консалтинговые команды** (2–10 человек), которым нужен премиальный лендинг
+  без счёта от агентства
+- **Эксперты в предметной области**, переходящие из наёмного специалиста в advisory-практику
+- **Преподаватели консалтинга** — студенты получают рабочий артефакт вместе с логикой,
+  стоящей за ним
 
----
-
-## Why zero-build React
-
-- **React without a build step.** JSX compiles in the browser via Babel Standalone.
-- **No Node.js anywhere.** Not locally, not on the server. No `npm install`, no bundler.
-- **Works on $3/month shared hosting.** Hostinger, SiteGround, GoDaddy, cPanel.
-- **Also works on modern static hosts** — Netlify, Vercel, Cloudflare Pages, GitHub Pages.
-- **Survives next to WordPress or PHP** on the same domain. You don't have to pick.
-
-The full trade-off analysis is in [ARCHITECTURE.md](ARCHITECTURE.md) — why this architecture
-made sense in the post-AI era, when it's the right call, and when it isn't.
+Не подходит основателям SaaS, маркетинговым агентствам и тем, у кого пока нет реального опыта
+делать проекты руками — логика позиционирования в шаблоне заточена под тех, кто действительно
+продаёт advisory-работу.
 
 ---
 
-## Quickstart (5 minutes, no AI)
+## Какую проблему решает
+
+Большинство консалтинговых лендингов проваливаются по одной из трёх причин: читаются как
+корпоративная каша, прячут цены и превращаются в чёрный ящик или пахнут инфопродуктовой
+воронкой. Этот шаблон построен на обратном: чёткое позиционирование, явные тарифы, честная
+дисквалификация. Полное обоснование каждой секции — в [METHODOLOGY.md](METHODOLOGY.md).
+
+---
+
+## Почему zero-build React
+
+- **React без билда.** JSX компилится прямо в браузере через Babel Standalone.
+- **Node.js не нужен нигде.** Ни локально, ни на сервере. Никакого `npm install`, никакого бандлера.
+- **Работает на шаред-хостинге за $3/мес.** Hostinger, SiteGround, GoDaddy, cPanel.
+- **Работает и на современных статических хостингах** — Netlify, Vercel, Cloudflare Pages, GitHub Pages.
+- **Уживается рядом с WordPress или PHP** на одном домене. Выбирать не нужно.
+
+Полный разбор компромиссов — в [ARCHITECTURE.md](ARCHITECTURE.md): почему такая архитектура
+имеет смысл в post-AI эпохе, когда она подходит, а когда нет.
+
+---
+
+## Быстрый старт (5 минут, без AI)
 
 ```bash
 git clone https://github.com/AI-agents-incubator/consulting-landing-template.git
@@ -70,17 +75,17 @@ cd consulting-landing-template
 python3 -m http.server 4000
 ```
 
-Open <http://localhost:4000> and you'll see the coming-soon placeholder.
-Open <http://localhost:4000/preview/> and you'll see the full landing with placeholder copy.
+Откройте <http://localhost:4000> — увидите coming-soon заглушку.
+Откройте <http://localhost:4000/preview/> — увидите полный лендинг с плейсхолдерами.
 
-Edit `content.en.md` / `content.ru.md`, sync into `landing/data.js`, refresh the browser,
-see the result. No build step, no watcher, no tooling.
+Правьте `content.en.md` / `content.ru.md`, синкайте в `landing/data.js`, обновляйте страницу,
+смотрите результат. Никакого билда, watcher'а и тулинга.
 
 ---
 
-## Recommended path (10 minutes, AI-assisted)
+## Рекомендуемый путь (10 минут, с AI)
 
-If you have the [Claude Code CLI](https://docs.claude.com/claude-code) installed:
+Если у вас установлен [Claude Code CLI](https://docs.claude.com/claude-code):
 
 ```bash
 git clone https://github.com/AI-agents-incubator/consulting-landing-template.git
@@ -88,98 +93,98 @@ cd consulting-landing-template
 claude
 ```
 
-Then paste the prompt from [BOOTSTRAP-PROMPT.md](BOOTSTRAP-PROMPT.md). Claude will
-interview you with ~10 questions, rewrite every placeholder with your own positioning,
-and tell you exactly what you still need to replace manually (logo, colors, photos).
+Затем вставьте промпт из [BOOTSTRAP-PROMPT.md](BOOTSTRAP-PROMPT.md). Claude задаст около 10
+вопросов, перепишет все плейсхолдеры под ваше позиционирование и точно скажет, что вам ещё
+нужно заменить руками (логотип, цвета, фото).
 
-Review the diff. Keep what you like. Deploy.
+Просмотрите diff. Оставьте то, что нравится. Деплойте.
 
 ---
 
-## Customize manually
+## Настройка вручную
 
-1. **Copy** — edit `content.en.md` and/or `content.ru.md`.
-2. **Data** — sync into `landing/data.js` (both `ru` and `en` branches stay in parity).
-3. **Components** — React is in `landing/components.jsx`. Edit freely.
-4. **Theme** — CSS variables are at the top of `preview/index.html` (colors for light and dark).
-5. **Logo** — the sparkle icon is inline SVG in `index.html` and `preview/index.html`.
+1. **Копирайт** — правьте `content.en.md` и/или `content.ru.md`.
+2. **Данные** — синкайте в `landing/data.js` (ветки `ru` и `en` держите в паритете).
+3. **Компоненты** — React лежит в `landing/components.jsx`. Правьте как угодно.
+4. **Тема** — CSS-переменные в начале `preview/index.html` (цвета светлой и тёмной темы).
+5. **Логотип** — иконка-искорка сделана инлайновым SVG в `index.html` и `preview/index.html`.
 
-For a deeper walkthrough of what each landing section is doing and why, read
+Подробный разбор того, что делает каждая секция лендинга и зачем, — в
 [METHODOLOGY.md](METHODOLOGY.md).
 
 ---
 
-## Deploy
+## Деплой
 
-Five hosting paths covered in detail: shared hosting, Netlify, Vercel, Cloudflare Pages,
-GitHub Pages. See [DEPLOY.md](DEPLOY.md).
+Подробно разобраны пять вариантов хостинга: шаред-хостинг, Netlify, Vercel, Cloudflare Pages,
+GitHub Pages. См. [DEPLOY.md](DEPLOY.md).
 
 ---
 
-## Project structure
+## Структура проекта
 
 ```
 .
-├── index.html                       # Coming-soon placeholder shown at the root
+├── index.html                       # Coming-soon заглушка в корне сайта
 ├── preview/
-│   └── index.html                   # The actual full landing (promote to root on launch)
+│   └── index.html                   # Полноценный лендинг (промоутится в корень при запуске)
 ├── landing/
-│   ├── data.js                      # window.DATA — all copy, bilingual
-│   └── components.jsx               # React components, single file
-├── content.en.md                    # Source-of-truth English copy
-├── content.ru.md                    # Source-of-truth Russian copy
-├── README.md                        # You are here
-├── METHODOLOGY.md                   # Positioning rationale — the "why" behind the structure
-├── BOOTSTRAP-PROMPT.md              # Copy-paste prompt for AI-driven customization
-├── DEPLOY.md                        # Five hosting options, step by step
-├── ARCHITECTURE.md                  # Zero-build React + PHP trade-offs
+│   ├── data.js                      # window.DATA — весь копирайт, двуязычный
+│   └── components.jsx               # React-компоненты, один файл
+├── content.en.md                    # Источник правды — английский копирайт
+├── content.ru.md                    # Источник правды — русский копирайт
+├── README.md                        # Вы здесь
+├── METHODOLOGY.md                   # Логика позиционирования — «почему» за структурой
+├── BOOTSTRAP-PROMPT.md              # Готовый промпт для AI-кастомизации
+├── DEPLOY.md                        # Пять вариантов хостинга, пошагово
+├── ARCHITECTURE.md                  # Компромиссы zero-build React + PHP
 ├── LICENSE                          # MIT
-├── netlify.toml                     # Netlify config with security headers
-└── .production-credentials.example  # Template for SSH deploy secrets (gitignored copy)
+├── netlify.toml                     # Конфиг Netlify с security-заголовками
+└── .production-credentials.example  # Шаблон для SSH-секретов деплоя (реальный файл в .gitignore)
 ```
 
 ---
 
-## Stack
+## Стек
 
-- React 18 + ReactDOM via unpkg CDN
-- Babel Standalone for in-browser JSX transpilation
-- Tailwind CSS via CDN
-- Inter via Google Fonts
+- React 18 + ReactDOM через unpkg CDN
+- Babel Standalone для транспиляции JSX в браузере
+- Tailwind CSS через CDN
+- Inter через Google Fonts
 
-No `package.json`, no `node_modules`, no build step, no CI required.
-
----
-
-## When NOT to use this template
-
-- You need strong SEO from day one — the landing is client-rendered; try Astro or
-  Next.js static export instead.
-- You're building real-time features (chat, collaboration) — this has no backend.
-- You need TypeScript — Babel Standalone doesn't type-check. Upgrade to Vite + React
-  locally and lose the zero-build benefit.
-- Your app has more than ~50 components — Babel-in-browser compilation becomes slow.
-  Move to a real build tool at that point.
+Ни `package.json`, ни `node_modules`, ни билда, ни CI не требуется.
 
 ---
 
-## About the methodology author
+## Когда НЕ стоит использовать этот шаблон
 
-This template and the positioning methodology it embodies come from the practical
-consulting work of **Alexey Krol** — technology entrepreneur and advisor who runs
-this methodology on his own advisory offer before sharing it openly here.
+- Нужен сильный SEO с первого дня — лендинг рендерится на клиенте; возьмите лучше Astro
+  или Next.js static export.
+- Делаете realtime-фичи (чат, совместная работа) — здесь нет бэкенда.
+- Нужен TypeScript — Babel Standalone не проверяет типы. Придётся перейти на Vite + React
+  локально и потерять преимущество zero-build.
+- В приложении больше ~50 компонентов — компиляция Babel в браузере становится медленной.
+  На этом этапе пора переходить на полноценный билд-тулинг.
+
+---
+
+## Об авторе методологии
+
+Этот шаблон и методология позиционирования, в нём заложенная, выросли из практической
+консалтинговой работы **Алексея Крола** — технологического предпринимателя и advisor'а,
+который сначала обкатывает методологию на собственном advisory-оффере, а потом открыто
+делится ей здесь.
 
 - LinkedIn: <https://www.linkedin.com/in/alexkrol/>
-- Personal site: <https://alexeykrol.com/>
-- Organization: **AI Agents Incubator**
+- Личный сайт: <https://alexeykrol.com/>
+- Организация: **AI Agents Incubator**
 
-The methodology has been battle-tested and is now open for anyone building a
-consulting practice. Credit is appreciated; a link back in your footer is a
-nice touch but not required.
+Методология проверена в бою и теперь открыта для всех, кто строит консалтинговую практику.
+Упоминание автора приветствуется; ссылка в футере — приятный жест, но не обязательна.
 
 ---
 
-## License
+## Лицензия
 
-[MIT](LICENSE). Use it, fork it, ship it, sell the result. Attribution welcomed but
-not required.
+[MIT](LICENSE). Используйте, форкайте, запускайте, продавайте результат. Атрибуция приветствуется,
+но не обязательна.

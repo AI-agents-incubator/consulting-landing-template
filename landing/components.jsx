@@ -34,7 +34,7 @@ const I = {
 };
 
 // ---------- Header ----------
-function Header({ L, t }) {
+function Header({ L, t, lang, onSetLang }) {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > 20);
@@ -57,6 +57,23 @@ function Header({ L, t }) {
             ))}
           </nav>
           <div className="flex items-center gap-2">
+            <div className="hidden sm:flex items-center gap-0.5 rounded-full bg-[var(--surface-alt)] border border-[var(--border)] p-0.5 mr-1" aria-label="Language">
+              {["ru", "en"].map(l => (
+                <button
+                  key={l}
+                  type="button"
+                  onClick={() => onSetLang(l)}
+                  aria-pressed={lang === l}
+                  className={`px-3 py-1 text-xs font-semibold rounded-full transition-all uppercase ${
+                    lang === l
+                      ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-sm"
+                      : "text-[var(--fg-muted)] hover:text-[var(--fg)]"
+                  }`}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
             <a href="#cta" className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 transition-all shadow-md shadow-purple-500/25 hover:shadow-lg hover:shadow-purple-500/30 hover:-translate-y-0.5">
               {t.navCta}
             </a>
@@ -680,13 +697,25 @@ function TweaksPanel({ lang, setLang, dark, setDark, onClose }) {
 
 // ---------- App ----------
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "lang": "en",
+  "lang": "ru",
   "dark": true
 }/*EDITMODE-END*/;
 
 function App() {
-  const [lang, setLang] = useState(TWEAK_DEFAULTS.lang);
-  const [dark, setDark] = useState(TWEAK_DEFAULTS.dark);
+  const [lang, setLang] = useState(() => {
+    try {
+      const saved = localStorage.getItem("landing-lang");
+      if (saved === "ru" || saved === "en") return saved;
+    } catch (e) {}
+    return TWEAK_DEFAULTS.lang;
+  });
+  const [dark, setDark] = useState(() => {
+    try {
+      const saved = localStorage.getItem("landing-dark");
+      if (saved === "true" || saved === "false") return saved === "true";
+    } catch (e) {}
+    return TWEAK_DEFAULTS.dark;
+  });
   const [tweaksOpen, setTweaksOpen] = useState(false);
 
   const t = useMemo(() => window.DATA[lang], [lang]);
@@ -695,6 +724,11 @@ function App() {
     document.documentElement.classList.toggle("dark", dark);
     document.documentElement.setAttribute("lang", lang);
   }, [dark, lang]);
+
+  useEffect(() => {
+    try { localStorage.setItem("landing-lang", lang); } catch (e) {}
+    try { localStorage.setItem("landing-dark", String(dark)); } catch (e) {}
+  }, [lang, dark]);
 
   // Persist tweaks to file + notify parent
   const pushEdit = (key, val) => {
@@ -719,7 +753,7 @@ function App() {
 
   return (
     <>
-      <Header L={lang} t={t} />
+      <Header L={lang} t={t} lang={lang} onSetLang={handleSetLang} />
       <main>
         <Hero t={t} L={lang} />
         <Audience t={t} />
