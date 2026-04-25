@@ -19,3 +19,5 @@ Thumbs.db
 
 # Local dependencies (this template is zero-build, but just in case)
 node_modules/
+.handoffs/local/
+.handoffs/*.local.md
